@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "I3M-Webiste-backend": {
+      "main": "src/I3M-Webiste-backend/main.mo",
+      "type": "motoko"
+    },
+    "I3M-Webiste-frontend": {
+      "dependencies": [
+        "I3M-Webiste-backend"
+      ],
+      "source": [
+        "src/I3M-Webiste-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "I3M-Webiste-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
