@@ -1,31 +1,26 @@
-import { useState } from 'react';
-import { I3M_Webiste_backend } from 'declarations/I3M-Webiste-backend';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navabar';
+import HomePage from './pages/Homepage';
+import AboutPage from './pages/About';
+import Feature from './pages/Feature';
+// import ContactPage from './pages/ContactPage';
+import Footer from './components/Footer'
 
-function App() {
-  const [greeting, setGreeting] = useState('');
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    I3M_Webiste_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
-
+const App = () => {
   return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/features" element={<Feature/>} />
+        { /*<Route path="/contact" element={<ContactPage />} /> */}
+        
+      </Routes>
+      <Footer/>
+    </Router>
   );
-}
+};
 
 export default App;
