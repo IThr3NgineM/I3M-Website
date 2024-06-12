@@ -1,9 +1,5 @@
 import { cn } from "../../utils/cn";
-import React, { createContext, useState, useContext, useRef, useEffect } from "react";
-
-const MouseEnterContext = createContext<
-  [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
->(undefined);
+import React, { createContext, useState, useRef, useEffect } from "react";
 
 export const CardContainer = ({
   children,
@@ -36,7 +32,7 @@ export const CardBody = ({
   return (
     <div
       className={cn(
-        "m-4 h-96 w-96  [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "m-4 h-96 w-96 [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d]",
         className
       )}
     >
@@ -108,7 +104,7 @@ export const CardItem = ({
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className={cn("w-fit transition duration-200 ease-linear", className)}
+      className={cn("w-fit border border-i3m-pink shadow-lg shadow-i3m-pink transition duration-200 ease-linear", className)}
       {...rest}
     >
       {children}
