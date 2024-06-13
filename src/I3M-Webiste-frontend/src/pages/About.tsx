@@ -1,3 +1,5 @@
+"use client";
+import React from "react";
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { Engine, Scene, ArcRotateCamera, Vector3, HemisphericLight, MeshBuilder } from "@babylonjs/core";
@@ -14,11 +16,16 @@ interface BuyProps {
 const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
 
   return (
+    <div className="relative overflow-hidden py-20  px-4 sm:px-6 lg:px-8 bg-i3m-dark">
+      <BackgroundBeams className="absolute inset-0 z-0" />
+      <h2 className="text-3xl font-bold text-white text-center font-rem relative z-10">
+        About{" "}
+        <span className="text-i3m-pink font-rem font-extrabold">I3M</span>
     <div className="py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark relative overflow-hidden">
       <h2 className="text-3xl font-bold text-white text-center font-rem">
         <span className="text-i3m-pink font-rem font-extrabold">About I3M</span>
       </h2>
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center mt-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center mt-10 relative z-10">
         <div className="w-full md:w-1/2 pr-8">
           <div className="mt-10">
             <h3 className="text-2xl font-bold text-i3m-purple font-rem">
@@ -42,7 +49,6 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
           </div>
         </div>
         <div className="w-full md:w-1/2 flex justify-center relative">
-          <BackgroundBeams className="absolute inset-0 z-0" />
           <img src={aboutImage} alt="I3M Vision" className="w-80 h-auto rounded-lg shadow-xl relative z-10" />
         </div>
       </div>
