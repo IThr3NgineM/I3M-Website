@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             <li><Link to="/" className="hover:text-i3m-pink transition-colors">Home</Link></li>
             <li><Link to="/about" className="hover:text-i3m-pink transition-colors">About</Link></li>
             <li><Link to="/features" className="hover:text-i3m-pink transition-colors">Features</Link></li>
-            <li><Link to="/contact" className="hover:text-i3m-pink transition-colors">Contact</Link></li>
+           
           </ul>
         </div>
         {/* Additional Links Grid */}

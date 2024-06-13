@@ -104,7 +104,7 @@ export const CardItem = ({
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className={cn("w-fit border border-i3m-pink shadow-lg shadow-i3m-pink transition duration-200 ease-linear", className)}
+      className={cn("w-fit border border-i3m-pink shadow-lg shadow-i3m-pink px-4 transition duration-200 ease-linear", className)}
       {...rest}
     >
       {children}

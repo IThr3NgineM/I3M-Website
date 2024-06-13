@@ -31,12 +31,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link
-              to="/contact"
-              className="hover:text-i3m-pink transition-colors"
-            >
-              Contact
-            </Link>
+           
           </li>
         </ul>
       </div>
