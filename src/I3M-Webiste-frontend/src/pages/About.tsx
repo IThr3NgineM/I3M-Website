@@ -2,6 +2,11 @@ import React from "react";
 import aboutImage from "../assets/IThreeM.png";
 import ctoImage from "../assets/dedan.jpeg";
 import { CardContainer, CardBody, CardItem } from '../components/ui/3d-card';
+<<<<<<< HEAD
+=======
+import { PinContainer } from "../components/ui/3d-pin";
+import { BackgroundBeams } from "../components/ui/background-beams"; // Ensure this path is correct
+>>>>>>> 3f7b2b8a43160b7c4df74d32e3774698d3f7f018
 
 interface BuyProps {
   handleConnectWallet: () => void;
@@ -9,11 +14,11 @@ interface BuyProps {
 
 const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
   return (
-    <div className="py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark">
+    <div className="py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark relative overflow-hidden">
       <h2 className="text-3xl font-bold text-white text-center font-rem">
         <span className="text-i3m-pink font-rem font-extrabold">About I3M</span>
       </h2>
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center mt-10">
         <div className="w-full md:w-1/2 pr-8">
           <div className="mt-10">
             <h3 className="text-2xl font-bold text-i3m-purple font-rem">Our Story</h3>
@@ -30,8 +35,9 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
             </p>
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center">
-          <img src={aboutImage} alt="I3M Vision" className="w-80 h-auto rounded-lg shadow-xl" />
+        <div className="w-full md:w-1/2 flex justify-center relative">
+          <BackgroundBeams className="absolute inset-0 z-0" />
+          <img src={aboutImage} alt="I3M Vision" className="w-80 h-auto rounded-lg shadow-xl relative z-10" />
         </div>
       </div>
       <div className="text-center mt-12 mb-12"> {/* Added mb-12 for spacing */}

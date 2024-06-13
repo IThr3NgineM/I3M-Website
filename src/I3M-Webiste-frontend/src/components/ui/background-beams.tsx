@@ -4,8 +4,13 @@ import { motion } from "framer-motion";
 import { cn } from "../../utils/cn";
 
 export const BackgroundBeams = React.memo(
+<<<<<<< HEAD
   ({ className }: { className?: string }) => {
     const paths = [
+=======
+    ({ className }: { className?: string }) => {
+      const paths = [
+>>>>>>> 3f7b2b8a43160b7c4df74d32e3774698d3f7f018
       "M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875",
       "M-373 -197C-373 -197 -305 208 159 335C623 462 691 867 691 867",
       "M-366 -205C-366 -205 -298 200 166 327C630 454 698 859 698 859",
@@ -57,6 +62,7 @@ export const BackgroundBeams = React.memo(
       "M-44 -573C-44 -573 24 -168 488 -41C952 86 1020 491 1020 491",
       "M-37 -581C-37 -581 31 -176 495 -49C959 78 1027 483 1027 483",
     ];
+<<<<<<< HEAD
     return (
       <div
         className={cn(
@@ -137,5 +143,81 @@ export const BackgroundBeams = React.memo(
     );
   }
 );
+=======
+   
+    return (
+        <div
+          className={cn(
+            "absolute h-full w-full inset-0 [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center",
+            className
+          )}
+        >
+          <svg
+            className="z-0 h-full w-full pointer-events-none absolute"
+            width="100%"
+            height="100%"
+            viewBox="0 0 696 316"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {paths.map((path, index) => (
+              <motion.path
+                key={`path-` + index}
+                d={path}
+                stroke={`url(#linearGradient-${index})`}
+                strokeOpacity="0.4"
+                strokeWidth="0.5"
+              ></motion.path>
+            ))}
+            <defs>
+              {paths.map((path, index) => (
+                <motion.linearGradient
+                  id={`linearGradient-${index}`}
+                  key={`gradient-${index}`}
+                  initial={{
+                    x1: "0%",
+                    x2: "0%",
+                    y1: "0%",
+                    y2: "0%",
+                  }}
+                  animate={{
+                    x1: ["0%", "100%"],
+                    x2: ["0%", "95%"],
+                    y1: ["0%", "100%"],
+                    y2: ["0%", `${93 + Math.random() * 8}%`],
+                  }}
+                  transition={{
+                    duration: Math.random() * 10 + 10,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    delay: Math.random() * 10,
+                  }}
+                >
+                  <stop stopColor="#18CCFC" stopOpacity="0"></stop>
+                  <stop stopColor="#18CCFC"></stop>
+                  <stop offset="32.5%" stopColor="#6344F5"></stop>
+                  <stop offset="100%" stopColor="#AE48FF" stopOpacity="0"></stop>
+                </motion.linearGradient>
+              ))}
+  
+              <radialGradient
+                id="paint0_radial_242_278"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(352 34) rotate(90) scale(555 1560.62)"
+              >
+                <stop offset="0.0666667" stopColor="var(--neutral-300)"></stop>
+                <stop offset="0.243243" stopColor="var(--neutral-300)"></stop>
+                <stop offset="0.43594" stopColor="white" stopOpacity="0"></stop>
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+      );
+    }
+  );
+>>>>>>> 3f7b2b8a43160b7c4df74d32e3774698d3f7f018
 
 BackgroundBeams.displayName = "BackgroundBeams";
