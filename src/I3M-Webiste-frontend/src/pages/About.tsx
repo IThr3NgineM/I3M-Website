@@ -1,5 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import * as THREE from "three";
+import { Engine, Scene, ArcRotateCamera, Vector3, HemisphericLight, MeshBuilder } from "@babylonjs/core";
+import "@babylonjs/loaders";
 import aboutImage from "../assets/IThreeM.png"; // Ensure this path is correct
+import { CardContainer, CardBody, CardItem } from '../components/ui/3d-card';
+import { PinContainer } from "../components/ui/3d-pin";
 import { BackgroundBeams } from "../components/ui/background-beams"; // Ensure this path is correct
 
 interface BuyProps {
@@ -7,11 +12,11 @@ interface BuyProps {
 }
 
 const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
+
   return (
     <div className="py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark relative overflow-hidden">
       <h2 className="text-3xl font-bold text-white text-center font-rem">
-        About{" "}
-        <span className="text-i3m-pink font-rem font-extrabold">I3M</span>
+        <span className="text-i3m-pink font-rem font-extrabold">About I3M</span>
       </h2>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center mt-10">
         <div className="w-full md:w-1/2 pr-8">
@@ -39,6 +44,55 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
         <div className="w-full md:w-1/2 flex justify-center relative">
           <BackgroundBeams className="absolute inset-0 z-0" />
           <img src={aboutImage} alt="I3M Vision" className="w-80 h-auto rounded-lg shadow-xl relative z-10" />
+        </div>
+      </div>
+
+      <div className="mt-12 text-center">
+        <CardContainer containerClassName="mt-10">
+          <CardBody>
+            <CardItem translateX={20} translateY={20} translateZ={50} rotateX={20} rotateY={20} rotateZ={0}>
+             <h3 className="text-2xl font-bold text-i3m-purple font-rem">
+              Ceo and Founder
+             </h3>
+             <div className="flex flex-wrap justify-center mt-6">
+              <div className="w-80 mx-4 mb-8">              
+               <img src="/src/assets/dedan.jpeg" alt="Team Member" className="w-full h-auto rounded-lg shadow-md" />
+               <h4 className="mt-4 text-xl font-semibold text-i3m-purple">Dedan Okware</h4>
+               <p className="mt-2 text-gray-300">Dedan Okware is a passionate and innovative software developer with a strong background in web 2, web 3 and web 3.0.</p>
+              </div>
+             </div>
+            </CardItem>
+          </CardBody>
+        </CardContainer>  
+
+        <div>
+        <div className="h-[40rem] w-full flex items-center justify-center ">
+         <PinContainer
+          title="Founder and CTO">
+          <div className="flex basis-full flex-col p-4 tracking-tight i3m-dark sm:basis-1/2 w-[20rem] h-[20rem] ">
+           <h3 className="text-2xl font-bold text-i3m-purple font-rem">
+            
+           </h3>
+           <div className="text-base !m-0 !p-0 font-normal">
+            <span className="text-slate-500 ">
+              <h4 className="mt-4 text-xl font-semibold text-white">Dedan Okware</h4>
+              <img src="/src/assets/dedan.jpeg" alt="Team Member" className="w-full h-auto rounded-lg shadow-md" />
+            </span>
+           </div>
+            <p className="mt-2 text-gray-300">Dedan Okware is a passionate and innovative software developer with a strong background in web 2, web 3 and web 3.0.</p>
+           <div className="flex flex-1 w-full rounded-lg mt-4" />
+           </div>
+         </PinContainer>
+        </div>
+        </div>
+        <div className="mt-12 text-center">
+
+          <h3 className="text-2xl font-bold text-i3m-purple font-rem">
+            Contact Us
+          </h3>
+          <p className="mt-4 text-lg text-gray-300">
+            Have more questions? Reach out to us at <a href="mailto:ithr3m@gmail.com" className="text-i3m-pink">support@i3m.com</a>
+          </p>
         </div>
       </div>
     </div>
