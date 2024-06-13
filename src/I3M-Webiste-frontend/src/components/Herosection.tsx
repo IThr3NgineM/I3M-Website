@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Logo from "../assets/IThreeM.png";
 import Particles from "react-tsparticles";
 import type { ISourceOptions } from "tsparticles-engine";
-import { CardContainer, CardBody, CardItem } from '../components/ui/3d-card'; // Adjust the import path as needed
+import { CardContainer, CardBody, CardItem } from '../components/ui/3d-card'; 
 
 const HeroSection = () => {
   const particlesOptions: ISourceOptions = {
@@ -89,12 +89,12 @@ const HeroSection = () => {
       {/* <Particles id="tsparticles" options={particlesOptions} /> */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 z-10">
         <div className="text-left">
-          <h1 className="text-4xl font-bold text-i3m-main">I-THREE-M (I3M) is an innovative project designed to revolutionize the creation and interaction of 3D virtual worlds on the Internet Computer Protocol (ICP).</h1>
-          <p className="mt-3 text-i3m-purple">
+          <h1 className="text-4xl font-bold text-i3m-purple">I-THREE-M (I3M) is an innovative project designed to revolutionize the creation and interaction of 3D virtual worlds on the Internet Computer Protocol (ICP).</h1>
+          <p className="mt-3 text-white text-xl">
             This whitepaper outlines the architecture, technologies, and vision behind I3M, detailing its role as a decentralized 3D engine. With a focus on empowering developers and content creators, I3M integrates robust rendering, physics, and input systems with blockchain technology, enabling secure and immersive metaverse experiences.
           </p>
-          <h2 className="mt-4 text-2xl font-bold text-i3m-main">Introduction</h2>
-          <p className="mt-2 text-i3m-purple">
+          <h2 className="mt-4 text-2xl font-bold text-i3m-purple">Introduction</h2>
+          <p className="mt-2 text-white">
             The metaverse represents the future of digital interaction, offering limitless possibilities for virtual experiences. However, existing platforms often impose limitations due to their centralized nature, lack of scalability, and inadequate security for digital assets. I-THREE-M (I3M) addresses these challenges by leveraging the decentralized capabilities of the Internet Computer Protocol (ICP) to provide a powerful, flexible, and secure 3D engine.
           </p>
           <motion.button
@@ -114,17 +114,18 @@ const HeroSection = () => {
           transition={{ delay: 0.2 }}
         />
       </div>
+
      {/* 3D Cards Section */}
      <div className="mt-10">
-        <h2 className="text-3xl font-bold text-center text-i3m-main">Core Components</h2>
+        <h2 className="text-3xl font-bold text-center text-i3m-purple">Core Components</h2>
         <CardContainer containerClassName="mt-10">
-          <CardBody>
+           <CardBody>
             <CardItem translateX={20} translateY={20} translateZ={50} rotateX={20} rotateY={20} rotateZ={0}>
-              <h3 className="text-xl font-bold text-i3m-main">I3M-Engine-Core</h3>
-              <p className="text-i3m-purple">
+              <h3 className="text-xl font-bold text-i3m-purple">I3M-Engine-Core</h3>
+              <p className="text-white">
                 The heart of the I3M project, this repository includes the core functionalities of the game engine, such as rendering, physics, and input systems. It is designed to provide a robust foundation for building immersive 3D experiences.
               </p>
-              <ul className="text-i3m-purple mt-2">
+              <ul className="text-white mt-2">
                 <li>Advanced rendering pipeline using Three.js and WebGL.</li>
                 <li>Physics engine integration with Cannon.js for realistic simulations.</li>
                 <li>Input system supporting various devices and custom keybindings.</li>
@@ -134,11 +135,11 @@ const HeroSection = () => {
           </CardBody>
           <CardBody>
             <CardItem translateX={10} translateY={10} translateZ={30} rotateX={10} rotateY={10} rotateZ={0}>
-              <h3 className="text-xl font-bold text-i3m-main">I3M-Chain-Bridge</h3>
-              <p className="text-i3m-purple">
+              <h3 className="text-xl font-bold text-i3m-purple">I3M-Chain-Bridge</h3>
+              <p className="text-white">
                 Facilitates seamless integration between the game engine and the ICP blockchain, enabling features like token transactions, smart contracts, and digital asset management.
               </p>
-              <ul className="text-i3m-purple mt-2">
+              <ul className="text-white mt-2">
                 <li>Secure blockchain interactions using Motoko and Rust.</li>
                 <li>Tokenization of digital assets for true ownership.</li>
                 <li>Smart contract support for in-game economies and transactions.</li>
@@ -147,11 +148,11 @@ const HeroSection = () => {
           </CardBody>
           <CardBody>
             <CardItem translateX={10} translateY={10} translateZ={30} rotateX={10} rotateY={10} rotateZ={0}>
-              <h3 className="text-xl font-bold text-i3m-main">I3M-Forge</h3>
-              <p className="text-i3m-purple">
+              <h3 className="text-xl font-bold text-i3m-purple">I3M-Forge</h3>
+              <p className="text-white">
                 A comprehensive toolkit and SDK for developers, featuring tools for asset creation, scene setup, and game development workflows.
               </p>
-              <ul className="text-i3m-purple mt-2">
+              <ul className="text-white mt-2">
                 <li>User-friendly interface for asset management and scene composition.</li>
                 <li>Integration with popular 3D model formats (GLTF/GLB).</li>
                 <li>Extensive documentation and tutorials for developers.</li>

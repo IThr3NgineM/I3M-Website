@@ -1,6 +1,7 @@
 import React from 'react';
 import { TracingBeam } from '../components/ui/tracing-beam';
 
+
 const features = [
   {
     title: "I3M-Engine-Core",
@@ -44,19 +45,20 @@ const features = [
 const Features = () => {
   return (
     <div className="py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
-      <h2 className="text-3xl font-bold text-center text-i3m-main mb-10">Core Components</h2>
+      <h2 className="text-3xl font-bold text-center text-i3m-pink mb-10">Core Components</h2>
       {features.map((feature, index) => (
-        <TracingBeam key={index} className="mb-10">
-          <div className="p-6 bg-i3m-dark border border-white rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-i3m-main mb-2">{feature.title}</h3>
-            <p className="text-i3m-purple mb-4">{feature.description}</p>
-            <ul className="text-i3m-purple list-disc list-inside">
-              {feature.points.map((point, idx) => (
-                <li key={idx}>{point}</li>
-              ))}
-            </ul>
-          </div>
-        </TracingBeam>
+        
+          <TracingBeam className="mb-10">
+            <div className="p-6 bg-i3m-dark border border-white rounded-lg shadow-lg">
+              <p className="text-white mb-4">{feature.description}</p>
+              <ul className="text-white list-disc list-inside">
+                {feature.points.map((point, idx) => (
+                  <li key={idx}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          </TracingBeam>
+        
       ))}
     </div>
   );
