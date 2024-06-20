@@ -1,13 +1,10 @@
-import React from "react";
-import aboutImage from "../assets/IThreeM.png";
-import ctoImage from "../assets/dedan.jpeg";
 "use client";
-import React from "react";
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { Engine, Scene, ArcRotateCamera, Vector3, HemisphericLight, MeshBuilder } from "@babylonjs/core";
 import "@babylonjs/loaders";
 import aboutImage from "../assets/IThreeM.png"; // Ensure this path is correct
+import ctoImage from "../assets/dedan.jpeg";
 import { CardContainer, CardBody, CardItem } from '../components/ui/3d-card';
 import { PinContainer } from "../components/ui/3d-pin";
 import { BackgroundBeams } from "../components/ui/background-beams"; // Ensure this path is correct
@@ -23,10 +20,8 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
       <h2 className="text-3xl font-bold text-white text-center font-rem relative z-10">
         About{" "}
         <span className="text-i3m-pink font-rem font-extrabold">I3M</span>
+        </h2>
     <div className="py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark relative overflow-hidden">
-      <h2 className="text-3xl font-bold text-white text-center font-rem">
-        <span className="text-i3m-pink font-rem font-extrabold">About I3M</span>
-      </h2>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center mt-10 relative z-10">
         <div className="w-full md:w-1/2 pr-8">
           <div className="mt-10">
@@ -59,16 +54,20 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
                   <h4 className="mt-4 text-xl font-semibold text-i3m-purple">Dedan Okware</h4>
                   <p className="mt-2 text-gray-300">Dedan Okware is a passionate and innovative software developer with a strong background in web 2, web 3 and web 3.0.</p>
                 </div>
-              </div>
+                </div>
             </CardItem>
           </CardBody>
         </CardContainer>
       </div>
-      <div className="text-center mt-12"> {/* Added mt-12 for spacing */}
-        <h3 className="text-2xl font-bold text-i3m-purple font-rem">Contact Us</h3>
-        <p className="mt-4 text-lg text-gray-300">
-          Have more questions? Reach out to us at <a href="mailto:ithr3m@gmail.com" className="text-i3m-pink">support@i3m.com</a>
-        </p>
+        <div className="mt-12 text-center">
+
+          <h3 className="text-2xl font-bold text-i3m-purple font-rem">
+            Contact Us
+          </h3>
+          <p className="mt-4 text-lg text-gray-300">
+            Have more questions? Reach out to us at <a href="mailto:ithr3m@gmail.com" className="text-i3m-pink">support@i3m.com</a>
+          </p>
+        </div>
       </div>
     </div>
   );
