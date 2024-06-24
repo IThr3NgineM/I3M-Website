@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
+    <div className="flex flex-col min-h-screen relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
       <BackgroundBeams className="absolute inset-0 z-0" />
       <div className="relative z-10 max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-white font-rem">
