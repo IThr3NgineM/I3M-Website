@@ -89,13 +89,18 @@ const HeroSection = () => {
       {/* <Particles id="tsparticles" options={particlesOptions} /> */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 z-10">
         <div className="text-left">
-          <h1 className="text-4xl font-bold text-i3m-purple">I-THREE-M (I3M) is an innovative project designed to revolutionize the creation and interaction of 3D virtual worlds on the Internet Computer Protocol (ICP).</h1>
+          <h1 className="text-5xl font-bold text-i3m-purple" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            Welcome to I3M - 3D Engine
+          </h1>
           <p className="mt-3 text-white text-xl">
-            This whitepaper outlines the architecture, technologies, and vision behind I3M, detailing its role as a decentralized 3D engine. With a focus on empowering developers and content creators, I3M integrates robust rendering, physics, and input systems with blockchain technology, enabling secure and immersive metaverse experiences.
+            Revolutionizing 3D Virtual Worlds on the Internet Computer Protocol (ICP)
           </p>
-          <h2 className="mt-4 text-2xl font-bold text-i3m-purple">Introduction</h2>
+          <p className="mt-3 text-white text-xl">
+            I3M is an innovative project designed to transform how we create and interact with 3D virtual worlds. Utilizing the decentralized capabilities of the Internet Computer Protocol (ICP), I3M provides a powerful, flexible, and secure 3D engine. This engine integrates robust rendering, physics, and input systems with blockchain technology to enable secure and immersive metaverse experiences.
+          </p>
+          <h2 className="mt-4 text-2xl font-bold text-i3m-purple" style={{ fontFamily: 'Montserrat, sans-serif' }}>Introduction</h2>
           <p className="mt-2 text-white">
-            The metaverse represents the future of digital interaction, offering limitless possibilities for virtual experiences. However, existing platforms often impose limitations due to their centralized nature, lack of scalability, and inadequate security for digital assets. I-THREE-M (I3M) addresses these challenges by leveraging the decentralized capabilities of the Internet Computer Protocol (ICP) to provide a powerful, flexible, and secure 3D engine.
+            The metaverse represents the future of digital interaction, offering limitless possibilities for virtual experiences. However, existing platforms often impose limitations due to their centralized nature, lack of scalability, and inadequate security for digital assets. I3M addresses these challenges by leveraging the decentralized capabilities of ICP, providing a powerful, flexible, and secure 3D engine.
           </p>
           <motion.button
             whileHover={{ scale: 1.1 }}
@@ -115,11 +120,11 @@ const HeroSection = () => {
         />
       </div>
 
-     {/* 3D Cards Section */}
-     <div className="mt-10">
-        <h2 className="text-3xl font-bold text-center text-i3m-purple">Core Components</h2>
+      {/* 3D Cards Section */}
+      <div className="mt-10">
+        <h2 className="text-3xl font-bold text-center text-i3m-purple" style={{ fontFamily: 'Montserrat, sans-serif' }}>Core Components</h2>
         <CardContainer containerClassName="mt-10">
-           <CardBody>
+          <CardBody>
             <CardItem translateX={20} translateY={20} translateZ={50} rotateX={20} rotateY={20} rotateZ={0}>
               <h3 className="text-xl font-bold text-i3m-purple">I3M-Engine-Core</h3>
               <p className="text-white">
