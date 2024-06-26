@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTwitter, faLinkedin, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
@@ -18,10 +18,16 @@ const Footer: React.FC = () => {
                 <h1 className="md:font-bold text-sm md:text-lg text-white">Twitter(X)</h1>
               </div>
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/IThreeM" target="_blank" rel="noopener noreferrer">
               <div className="flex flex-col items-center justify-center p-1">
                 <FontAwesomeIcon icon={faGithub} className="text-white x" />
                 <h1 className="md:font-bold text-sm md:text-lg text-white">Github</h1>
+              </div>
+            </a>
+            <a href="https://discord.gg/7qhQz9Gn" target="_blank" rel="noopener noreferrer">
+              <div className="flex flex-col items-center justify-center p-1">
+                <FontAwesomeIcon icon={faDiscord} className="text-white x" />
+                <h1 className="md:font-bold text-sm md:text-lg text-white">Discord</h1>
               </div>
             </a>
             <a href="https://www.linkedin.com/company/i-three-m" target="_blank" rel="noopener noreferrer">
