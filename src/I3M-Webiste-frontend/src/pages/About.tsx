@@ -171,24 +171,24 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
                 alt="Juliet Wambuku"
                 className="w-32 h-32 mx-auto rounded-full shadow-md"
               />
-              <p className="mt-4 text-gray-300">Co-Founder</p>
+              <p className="mt-4 text-gray-300">Co-Founder & Developer</p>
               <div className="flex justify-center mt-4 space-x-4">
                 <a
-                  href="https://twitter.com/juliet"
+                  href="https://x.com/JulietKiny23187?t=89v42Pj06Sl22e0-nIcdPA&s=09"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaTwitter className="text-i3m-purple" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/julietwambuku"
+                  href="https://www.linkedin.com/in/juliet-wambuku-033502222"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin className="text-i3m-purple" />
                 </a>
                 <a
-                  href="https://github.com/julietwambuku"
+                  href="https://github.com/Wambuku"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
