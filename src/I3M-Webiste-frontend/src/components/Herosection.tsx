@@ -3,11 +3,13 @@ import { motion } from "framer-motion";
 import Logo from "../assets/IThreeM.png";
 import BackgroundVideo from "../assets/background.mp4";
 import DogVideo from "../assets/components.mp4";
+import { useNavigate } from 'react-router-dom';
 import { CardContainer, CardBody, CardItem } from "../components/ui/3d-card";
 
 const HeroSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const dogVideoRef = useRef<HTMLVideoElement>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (videoRef.current) {
@@ -97,6 +99,7 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="mt-6 bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded shadow"
+                onClick={() => navigate('/about')}
               >
                 Learn More
               </motion.button>
