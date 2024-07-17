@@ -1,6 +1,7 @@
 import React from "react";
 import { TracingBeam } from "../components/ui/tracing-beam";
 import { LampContainer } from "../components/ui/lampDemo";
+
 const features = [
   {
     title: "I3M-Engine-Core",
@@ -38,14 +39,14 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
+    <div className="py-8 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
       <h2 className="text-3xl font-bold text-center text-i3m-pink mb-10">
         Core Components
       </h2>
-      <TracingBeam className="mb-10">
+      <TracingBeam className="mb-6">
         {features.map((feature, index) => (
           <LampContainer key={index}>
-            <div className="p-6 bg-i3m-dark border border-white rounded-lg shadow-lg mb-6">
+            <div className="p-6 bg-i3m-dark border border-white rounded-lg shadow-lg mb-0"> 
               <h3 className="text-xl font-bold text-i3m-purple mb-2">
                 {feature.title}
               </h3>

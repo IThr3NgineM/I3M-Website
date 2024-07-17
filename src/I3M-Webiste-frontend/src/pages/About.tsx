@@ -1,13 +1,13 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import * as THREE from "three";
-import { Engine, Scene, ArcRotateCamera, Vector3, HemisphericLight, MeshBuilder } from "@babylonjs/core";
-import "@babylonjs/loaders";
-import aboutImage from "../assets/IThreeM.png"; // Ensure this path is correct
-import ctoImage from "../assets/dedan.jpeg";
-import { CardContainer, CardBody, CardItem } from '../components/ui/3d-card';
-import { PinContainer } from "../components/ui/3d-pin";
-import { BackgroundBeams } from "../components/ui/background-beams"; // Ensure this path is correct
+import React from "react";
+import { motion } from "framer-motion";
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import aboutImage from "../assets/IThreeM.png";
+import Avatar1 from "../assets/avatar1.png";
+import Avatar2 from "../assets/avatar2.png";
+import Avatar3 from "../assets/avatar3.png";
+import { CardContainer, CardBody, CardItem } from "../components/ui/3d-card";
+import { BackgroundBeams } from "../components/ui/background-beams";
 
 interface BuyProps {
   handleConnectWallet: () => void;
@@ -15,59 +15,245 @@ interface BuyProps {
 
 const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
   return (
-    <div className="relative overflow-hidden py-20  px-4 sm:px-6 lg:px-8 bg-i3m-dark">
+    <div className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark">
       <BackgroundBeams className="absolute inset-0 z-0" />
-      <h2 className="text-3xl font-bold text-white text-center font-rem relative z-10">
-        About{" "}
-        <span className="text-i3m-pink font-rem font-extrabold">I3M</span>
+      <div className="relative z-10">
+        <h2 className="text-3xl font-bold text-white text-center font-rem">
+          About{" "}
+          <span className="text-i3m-pink font-rem font-extrabold">I3M</span>
         </h2>
-    <div className="py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark relative overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center mt-10 relative z-10">
-        <div className="w-full md:w-1/2 pr-8">
-          <div className="mt-10">
-            <h3 className="text-2xl font-bold text-i3m-purple font-rem">Our Story</h3>
-            <p className="mt-4 text-lg text-gray-300 font-rem">
-              I3M began with a vision to democratize the creation of 3D virtual worlds. We aim to enable developers to build, share, and monetize their creations in a decentralized ecosystem. By integrating cutting-edge technologies in 3D rendering, blockchain, and game development, I3M seeks to redefine the standards for virtual experiences and digital ownership.
-            </p>
-            <h4 className="mt-6 text-xl font-semibold text-i3m-purple font-rem">Development</h4>
-            <p className="mt-2 text-lg text-gray-300 font-rem">
-              Our team consists of experienced developers, blockchain experts, and enthusiasts of virtual reality. We leverage the Internet Computer Protocol (ICP) to build a secure, scalable, and decentralized platform that serves as the backbone of I3M. ICP's innovative technology ensures that our transactions are fast, reliable, and environmentally friendly.
-            </p>
-            <h4 className="mt-6 text-xl font-semibold text-i3m-purple font-rem">Vision</h4>
-            <p className="mt-2 text-lg text-gray-300 font-rem">
-              I3M aims to become the go-to platform for creating, sharing, and monetizing 3D virtual worlds. Whether you're a developer, a gamer, or a virtual reality enthusiast, I3M offers the tools and ecosystem to bring your digital creations to life. Join us in revolutionizing the virtual world with I3M.
-            </p>
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center mt-10">
+          <div className="w-full md:w-1/2 pr-8">
+            <div className="mt-10">
+              <motion.h3
+                className="text-2xl font-bold text-i3m-purple font-rem"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+              >
+                Our Story
+              </motion.h3>
+              <motion.p
+                className="mt-4 text-lg text-gray-300 font-rem"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+              >
+                I3M began with a vision to democratize the creation of 3D
+                virtual worlds. We aim to enable developers to build, share, and
+                monetize their creations in a decentralized ecosystem. By
+                integrating cutting-edge technologies in 3D rendering,
+                blockchain, and game development, I3M seeks to redefine the
+                standards for virtual experiences and digital ownership.
+              </motion.p>
+              <motion.h4
+                className="mt-6 text-xl font-semibold text-i3m-purple font-rem"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 }}
+              >
+                Development
+              </motion.h4>
+              <motion.p
+                className="mt-2 text-lg text-gray-300 font-rem"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9 }}
+              >
+                Our team consists of experienced developers, blockchain experts,
+                and enthusiasts of virtual reality. We leverage the Internet
+                Computer Protocol (ICP) to build a secure, scalable, and
+                decentralized platform that serves as the backbone of I3M. ICP's
+                innovative technology ensures that our transactions are fast,
+                reliable, and environmentally friendly.
+              </motion.p>
+              <motion.h4
+                className="mt-6 text-xl font-semibold text-i3m-purple font-rem"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.1 }}
+              >
+                Vision
+              </motion.h4>
+              <motion.p
+                className="mt-2 text-lg text-gray-300 font-rem"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.3 }}
+              >
+                I3M aims to become the go-to platform for creating, sharing, and
+                monetizing 3D virtual worlds. Whether you're a developer, a
+                gamer, or a virtual reality enthusiast, I3M offers the tools and
+                ecosystem to bring your digital creations to life. Join us in
+                revolutionizing the virtual world with I3M.
+              </motion.p>
+            </div>
           </div>
-        </div>
-        <div className="w-full md:w-1/2 flex justify-center relative">
-          <img src={aboutImage} alt="I3M Vision" className="w-80 h-auto rounded-lg shadow-xl relative z-10" />
+          <motion.div
+            className="w-full md:w-1/2 flex justify-center relative"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.4 }}
+          >
+            <img
+              src={aboutImage}
+              alt="I3M Vision"
+              className="w-80 h-auto rounded-lg shadow-xl relative z-10"
+            />
+          </motion.div>
         </div>
       </div>
-      <div className="text-center mt-12 mb-12"> {/* Added mb-12 for spacing */}
+
+      {/* Our Team Section */}
+      <div className="relative z-10 py-20">
+        <h2 className="text-3xl font-bold text-white text-center font-rem mb-10">
+          Our{" "}
+          <span className="text-i3m-pink font-rem font-extrabold">Team</span>
+        </h2>
         <CardContainer containerClassName="mt-4">
           <CardBody>
-            <CardItem translateX={20} translateY={20} translateZ={50} rotateX={20} rotateY={20} rotateZ={0}>
-              <h3 className="text-2xl font-bold text-i3m-purple font-rem">Founder and CTO</h3>
-              <div className="flex flex-wrap justify-center mt-6">
-                <div className="w-80 mx-4 mb-8">
-                  <img src={ctoImage} alt="Team Member" className="w-full h-auto rounded-lg shadow-md" />
-                  <h4 className="mt-4 text-xl font-semibold text-i3m-purple">Dedan Okware</h4>
-                  <p className="mt-2 text-gray-300">Dedan Okware is a passionate and innovative software developer with a strong background in web 2, web 3 and web 3.0.</p>
-                </div>
-                </div>
+            <CardItem
+              translateX={20}
+              translateY={20}
+              translateZ={50}
+              rotateX={20}
+              rotateY={20}
+              rotateZ={0}
+            >
+              <h3 className="text-2xl font-bold text-i3m-purple font-rem">
+                Dedan Okware
+              </h3>
+              <img
+                src={Avatar1}
+                alt="Dedan Okware"
+                className="w-32 h-32 mx-auto rounded-full shadow-md"
+              />
+              <p className="mt-4 text-gray-300">Founder and CTO</p>
+              <div className="flex justify-center mt-4 space-x-4">
+                <a
+                  href="https://twitter.com/dedan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter className="text-i3m-purple" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/dedanokware"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-i3m-purple" />
+                </a>
+                <a
+                  href="https://github.com/dedanokware"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-i3m-purple" />
+                </a>
+              </div>
+            </CardItem>
+          </CardBody>
+          <CardBody>
+            <CardItem
+              translateX={20}
+              translateY={20}
+              translateZ={50}
+              rotateX={20}
+              rotateY={20}
+              rotateZ={0}
+            >
+              <h3 className="text-2xl font-bold text-i3m-purple font-rem">
+                Juliet Wambuku
+              </h3>
+              <img
+                src={Avatar2}
+                alt="Juliet Wambuku"
+                className="w-32 h-32 mx-auto rounded-full shadow-md"
+              />
+              <p className="mt-4 text-gray-300">Co-Founder</p>
+              <div className="flex justify-center mt-4 space-x-4">
+                <a
+                  href="https://twitter.com/juliet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter className="text-i3m-purple" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/julietwambuku"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-i3m-purple" />
+                </a>
+                <a
+                  href="https://github.com/julietwambuku"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-i3m-purple" />
+                </a>
+              </div>
+            </CardItem>
+          </CardBody>
+          <CardBody>
+            <CardItem
+              translateX={20}
+              translateY={20}
+              translateZ={50}
+              rotateX={20}
+              rotateY={20}
+              rotateZ={0}
+            >
+              <h3 className="text-2xl font-bold text-i3m-purple font-rem">
+                Winfred Muusi
+              </h3>
+              <img
+                src={Avatar3}
+                alt="Winfred Muusi"
+                className="w-32 h-32 mx-auto rounded-full shadow-md"
+              />
+              <p className="mt-4 text-gray-300">Chief Developer</p>
+              <div className="flex justify-center mt-4 space-x-4">
+                <a
+                  href="https://twitter.com/winfred"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter className="text-i3m-purple" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/winfredmuusi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-i3m-purple" />
+                </a>
+                <a
+                  href="https://github.com/winfredmuusi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-i3m-purple" />
+                </a>
+              </div>
             </CardItem>
           </CardBody>
         </CardContainer>
       </div>
-        <div className="mt-12 text-center">
 
-          <h3 className="text-2xl font-bold text-i3m-purple font-rem">
-            Contact Us
-          </h3>
-          <p className="mt-4 text-lg text-gray-300">
-            Have more questions? Reach out to us at <a href="mailto:ithr3m@gmail.com" className="text-i3m-pink">support@i3m.com</a>
-          </p>
-        </div>
+      {/* Contact Us Section */}
+      <div className="relative z-10 mt-12 text-center">
+        <h3 className="text-2xl font-bold text-i3m-purple font-rem">
+          Contact Us
+        </h3>
+        <p className="mt-4 text-lg text-gray-300">
+          Have more questions? Reach out to us at{" "}
+          <a href="mailto:ithr3m@gmail.com" className="text-i3m-pink">
+            support@i3m.com
+          </a>
+        </p>
       </div>
     </div>
   );
