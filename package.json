@@ -14,5 +14,14 @@
   "type": "module",
   "workspaces": [
     "src/I3M-Webiste-frontend"
-  ]
+  ],
+  "dependencies": {
+    "@babylonjs/core": "^7.15.1",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.5.0",
+    "tsparticles-engine": "^2.12.0"
+  },
+  "devDependencies": {
+    "@types/babylonjs": "^2.4.1"
+  }
 }
