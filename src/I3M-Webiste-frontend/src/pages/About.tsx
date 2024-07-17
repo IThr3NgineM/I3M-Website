@@ -113,6 +113,7 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
         <CardContainer containerClassName="mt-4">
           <CardBody>
             <CardItem
+              className="w-80 h-96 flex flex-col items-center justify-center"
               translateX={20}
               translateY={20}
               translateZ={50}
@@ -128,24 +129,24 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
                 alt="Dedan Okware"
                 className="w-32 h-32 mx-auto rounded-full shadow-md"
               />
-              <p className="mt-4 text-gray-300">Founder and CTO</p>
+              <p className="mt-4 text-gray-300">Founder and CEO</p>
               <div className="flex justify-center mt-4 space-x-4">
                 <a
-                  href="https://twitter.com/dedan"
+                  href="https://x.com/Dedan_O_Okware"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaTwitter className="text-i3m-purple" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/dedanokware"
+                  href="https://www.linkedin.com/in/softcysec-dedan-okware"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin className="text-i3m-purple" />
                 </a>
                 <a
-                  href="https://github.com/dedanokware"
+                  href="https://github.com/SoftCysec"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -156,6 +157,7 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
           </CardBody>
           <CardBody>
             <CardItem
+              className="w-80 h-96 flex flex-col items-center justify-center"
               translateX={20}
               translateY={20}
               translateZ={50}
@@ -171,7 +173,7 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
                 alt="Juliet Wambuku"
                 className="w-32 h-32 mx-auto rounded-full shadow-md"
               />
-              <p className="mt-4 text-gray-300">Co-Founder & Developer</p>
+              <p className="mt-4 text-gray-300">Co-Founder & Chief Maverick</p>
               <div className="flex justify-center mt-4 space-x-4">
                 <a
                   href="https://x.com/JulietKiny23187?t=89v42Pj06Sl22e0-nIcdPA&s=09"
@@ -199,6 +201,7 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
           </CardBody>
           <CardBody>
             <CardItem
+              className="w-80 h-96 flex flex-col items-center justify-center"
               translateX={20}
               translateY={20}
               translateZ={50}
@@ -214,24 +217,26 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
                 alt="Winfred Muusi"
                 className="w-32 h-32 mx-auto rounded-full shadow-md"
               />
-              <p className="mt-4 text-gray-300">Chief Developer</p>
+              <p className="mt-4 text-gray-300">
+                Developer Relations and Community Manager
+              </p>
               <div className="flex justify-center mt-4 space-x-4">
                 <a
-                  href="https://twitter.com/winfred"
+                  href="https://x.com/WinnyMuusi"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaTwitter className="text-i3m-purple" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/winfredmuusi"
+                  href="https://www.linkedin.com/in/winfred-muusi-b7062b244/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin className="text-i3m-purple" />
                 </a>
                 <a
-                  href="https://github.com/winfredmuusi"
+                  href="https://github.com/MuusiI"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

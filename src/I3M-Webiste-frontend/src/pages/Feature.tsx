@@ -39,18 +39,18 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="py-8 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
-      <h2 className="text-3xl font-bold text-center text-i3m-pink mb-10">
+    <div className="py-4 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
+      <h2 className="text-3xl font-bold text-center text-i3m-pink mb-2">
         Core Components
       </h2>
-      <TracingBeam className="mb-6">
+      <TracingBeam className="mb-1">
         {features.map((feature, index) => (
-          <LampContainer key={index}>
-            <div className="p-6 bg-i3m-dark border border-white rounded-lg shadow-lg mb-0"> 
-              <h3 className="text-xl font-bold text-i3m-purple mb-2">
+          <LampContainer key={index} className="mb-2">
+            <div className="p-2 bg-i3m-dark border border-white rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-i3m-purple mb-1">
                 {feature.title}
               </h3>
-              <p className="text-white mb-4">{feature.description}</p>
+              <p className="text-white mb-2">{feature.description}</p>
               <ul className="text-white list-disc list-inside">
                 {feature.points.map((point, idx) => (
                   <li key={idx}>{point}</li>
