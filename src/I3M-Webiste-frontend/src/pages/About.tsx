@@ -113,6 +113,7 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
         <CardContainer containerClassName="mt-4">
           <CardBody>
             <CardItem
+              className="w-80 h-96 flex flex-col items-center justify-center"
               translateX={20}
               translateY={20}
               translateZ={50}
@@ -156,6 +157,7 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
           </CardBody>
           <CardBody>
             <CardItem
+              className="w-80 h-96 flex flex-col items-center justify-center"
               translateX={20}
               translateY={20}
               translateZ={50}
@@ -199,6 +201,7 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
           </CardBody>
           <CardBody>
             <CardItem
+              className="w-80 h-96 flex flex-col items-center justify-center"
               translateX={20}
               translateY={20}
               translateZ={50}
