@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import Logo from "../assets/IThreeM.png";
-import BackgroundVideo from "../assets/background.mp4"; 
-import DogVideo from "../assets/components.mp4"; 
-import { CardContainer, CardBody, CardItem } from '../components/ui/3d-card';
+import BackgroundVideo from "../assets/background.mp4";
+import DogVideo from "../assets/components.mp4";
+import { CardContainer, CardBody, CardItem } from "../components/ui/3d-card";
 
 const HeroSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -11,12 +11,11 @@ const HeroSection = () => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; 
+      videoRef.current.playbackRate = 0.5;
     }
     if (dogVideoRef.current) {
-      dogVideoRef.current.playbackRate = 0.5; 
+      dogVideoRef.current.playbackRate = 0.5;
 
-      
       const handleTimeUpdate = () => {
         if (dogVideoRef.current) {
           const { currentTime, duration } = dogVideoRef.current;
@@ -27,12 +26,14 @@ const HeroSection = () => {
         }
       };
 
-      dogVideoRef.current.addEventListener('timeupdate', handleTimeUpdate);
+      dogVideoRef.current.addEventListener("timeupdate", handleTimeUpdate);
 
-     
       return () => {
         if (dogVideoRef.current) {
-          dogVideoRef.current.removeEventListener('timeupdate', handleTimeUpdate);
+          dogVideoRef.current.removeEventListener(
+            "timeupdate",
+            handleTimeUpdate
+          );
         }
       };
     }
@@ -56,16 +57,16 @@ const HeroSection = () => {
   return (
     <div>
       <div className="relative overflow-hidden h-screen">
-        <video 
+        <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover z-0" 
-          src={BackgroundVideo} 
-          autoPlay 
-          loop 
-          muted 
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          src={BackgroundVideo}
+          autoPlay
+          loop
+          muted
           playsInline
         ></video>
-        
+
         <div className="relative z-10 bg-black bg-opacity-50 text-white p-4 h-full flex items-center">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <motion.div
@@ -79,7 +80,7 @@ const HeroSection = () => {
                 animate={{ y: 0 }}
                 transition={{ delay: 0.4 }}
                 className="text-5xl font-bold text-i3m-purple"
-                style={{ fontFamily: 'Montserrat, sans-serif' }}
+                style={{ fontFamily: "Montserrat, sans-serif" }}
               >
                 Welcome to I3M
               </motion.h1>
@@ -88,7 +89,7 @@ const HeroSection = () => {
                 animate={{ y: 0 }}
                 transition={{ delay: 0.6 }}
                 className="text-2xl font-bold text-i3m-purple mt-4"
-                style={{ fontFamily: 'Montserrat, sans-serif' }}
+                style={{ fontFamily: "Montserrat, sans-serif" }}
               >
                 Revolutionizing 3D Virtual Worlds
               </motion.h2>
@@ -114,15 +115,15 @@ const HeroSection = () => {
 
       {/* Core Components Section */}
       <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
-        <video 
+        <video
           ref={dogVideoRef}
-          className="absolute inset-0 w-full h-full object-cover z-0" 
-          src={DogVideo} 
-          autoPlay 
-          muted 
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          src={DogVideo}
+          autoPlay
+          muted
           playsInline
         ></video>
-        
+
         <div className="relative z-10">
           <motion.div
             className="mt-10"
@@ -132,7 +133,7 @@ const HeroSection = () => {
           >
             <h2
               className="text-3xl font-bold text-center text-i3m-purple mb-10"
-              style={{ fontFamily: 'Montserrat, sans-serif' }}
+              style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Core Components
             </h2>
@@ -147,9 +148,12 @@ const HeroSection = () => {
                   rotateY={20}
                   rotateZ={0}
                 >
-                  <h3 className="text-xl font-bold text-i3m-purple">I3M-Engine-Core</h3>
+                  <h3 className="text-xl font-bold text-i3m-purple">
+                    I3M-Engine-Core
+                  </h3>
                   <p className="text-white">
-                    Advanced rendering pipeline, realistic physics, custom input system, and ICP compatibility.
+                    Advanced rendering pipeline, realistic physics, custom input
+                    system, and ICP compatibility.
                   </p>
                 </CardItem>
               </CardBody>
@@ -163,9 +167,12 @@ const HeroSection = () => {
                   rotateY={10}
                   rotateZ={0}
                 >
-                  <h3 className="text-xl font-bold text-i3m-purple">I3M-Chain-Bridge</h3>
+                  <h3 className="text-xl font-bold text-i3m-purple">
+                    I3M-Chain-Bridge
+                  </h3>
                   <p className="text-white">
-                    Seamless integration with ICP for token transactions, smart contracts, and asset management.
+                    Seamless integration with ICP for token transactions, smart
+                    contracts, and asset management.
                   </p>
                 </CardItem>
               </CardBody>
@@ -179,9 +186,12 @@ const HeroSection = () => {
                   rotateY={10}
                   rotateZ={0}
                 >
-                  <h3 className="text-xl font-bold text-i3m-purple">I3M-Forge</h3>
+                  <h3 className="text-xl font-bold text-i3m-purple">
+                    I3M-Forge
+                  </h3>
                   <p className="text-white">
-                    Comprehensive toolkit for asset creation, scene setup, and development workflows.
+                    Comprehensive toolkit for asset creation, scene setup, and
+                    development workflows.
                   </p>
                 </CardItem>
               </CardBody>

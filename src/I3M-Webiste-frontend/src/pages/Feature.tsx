@@ -40,10 +40,10 @@ const features = [
 const Features = () => {
   return (
     <div className="py-8 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
-      <h2 className="text-3xl font-bold text-center text-i3m-pink mb-10">
+      <h2 className="text-3xl font-bold text-center text-i3m-pink mb-4">
         Core Components
       </h2>
-      <TracingBeam className="mb-6">
+      <TracingBeam className="mb-2">
         {features.map((feature, index) => (
           <LampContainer key={index}>
             <div className="p-6 bg-i3m-dark border border-white rounded-lg shadow-lg mb-0"> 
