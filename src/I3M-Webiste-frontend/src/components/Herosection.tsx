@@ -157,10 +157,7 @@ const HeroSection = () => {
                   <p className="text-white">
                     The heart of the I3M project, this repository includes the
                     core functionalities of the game engine, such as rendering,
-                    physics, and input systems. It is designed to provide a
-                    robust foundation for building immersive 3D
-                    experiences.Advanced rendering pipeline using Three.js and
-                    WebGL.
+                    physics, and input systems.
                   </p>
                 </CardItem>
               </CardBody>
@@ -181,8 +178,7 @@ const HeroSection = () => {
                     Facilitates seamless integration between the game engine and
                     the ICP blockchain, enabling features like token
                     transactions, smart contracts, and digital asset
-                    management.Secure blockchain interactions using Motoko and
-                    Rust. Tokenization of digital assets for true ownership.
+                    management. Tokenization of digital assets for true ownership.
                   </p>
                 </CardItem>
               </CardBody>
