@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Logo from "../assets/IThreeM.png";
 import BackgroundVideo from "../assets/backgroundvideo.mp4";
-import DogVideo from "../assets/components.mp4";
-import { useNavigate } from 'react-router-dom';
+import DogVideo from "../assets/background.mp4";
+import { useNavigate } from "react-router-dom";
 import { CardContainer, CardBody, CardItem } from "../components/ui/3d-card";
 
 const HeroSection = () => {
@@ -99,7 +99,7 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="mt-6 bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded shadow"
-                onClick={() => navigate('/about')}
+                onClick={() => navigate("/about")}
               >
                 Learn More
               </motion.button>
@@ -155,8 +155,12 @@ const HeroSection = () => {
                     I3M-Engine-Core
                   </h3>
                   <p className="text-white">
-                    Advanced rendering pipeline, realistic physics, custom input
-                    system, and ICP compatibility.
+                    The heart of the I3M project, this repository includes the
+                    core functionalities of the game engine, such as rendering,
+                    physics, and input systems. It is designed to provide a
+                    robust foundation for building immersive 3D
+                    experiences.Advanced rendering pipeline using Three.js and
+                    WebGL.
                   </p>
                 </CardItem>
               </CardBody>
@@ -174,8 +178,11 @@ const HeroSection = () => {
                     I3M-Chain-Bridge
                   </h3>
                   <p className="text-white">
-                    Seamless integration with ICP for token transactions, smart
-                    contracts, and asset management.
+                    Facilitates seamless integration between the game engine and
+                    the ICP blockchain, enabling features like token
+                    transactions, smart contracts, and digital asset
+                    management.Secure blockchain interactions using Motoko and
+                    Rust. Tokenization of digital assets for true ownership.
                   </p>
                 </CardItem>
               </CardBody>
@@ -193,8 +200,11 @@ const HeroSection = () => {
                     I3M-Forge
                   </h3>
                   <p className="text-white">
-                    Comprehensive toolkit for asset creation, scene setup, and
-                    development workflows.
+                    A comprehensive toolkit and SDK for developers, featuring
+                    tools for asset creation, scene setup, and game development
+                    workflows.User-friendly interface for asset management. Integration with popular 3D model
+                    formats. Extensive documentation and tutorials for
+                    developers.
                   </p>
                 </CardItem>
               </CardBody>
