@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Logo from "../assets/IThreeM.png";
-import BackgroundVideo from "../assets/background.mp4";
+import BackgroundVideo from "../assets/backgroundvideo.mp4";
 import DogVideo from "../assets/components.mp4";
 import { useNavigate } from 'react-router-dom';
 import { CardContainer, CardBody, CardItem } from "../components/ui/3d-card";

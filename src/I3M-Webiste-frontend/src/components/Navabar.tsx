@@ -16,7 +16,10 @@ const Navbar = () => {
           <img src={Logo} alt="I3M Logo" className="h-10" />
         </div>
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
+          <button
+            onClick={toggleMenu}
+            className="text-white focus:outline-none"
+          >
             <svg
               className="w-6 h-6"
               fill="none"
@@ -45,13 +48,26 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/features" className="hover:text-i3m-pink transition-colors">
+            <Link
+              to="/features"
+              className="hover:text-i3m-pink transition-colors"
+            >
               Features
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-i3m-pink transition-colors">
+            <Link
+              to="/contact"
+              className="hover:text-i3m-pink transition-colors"
+            >
               Contact
+            </Link>
+          </li>
+          <li className="ml-auto">
+            <Link to="/">
+              <button className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                Product
+              </button>
             </Link>
           </li>
         </ul>
@@ -65,18 +81,34 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-i3m-pink transition-colors">
+              <Link
+                to="/about"
+                className="hover:text-i3m-pink transition-colors"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/features" className="hover:text-i3m-pink transition-colors">
+              <Link
+                to="/features"
+                className="hover:text-i3m-pink transition-colors"
+              >
                 Features
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-i3m-pink transition-colors">
+              <Link
+                to="/contact"
+                className="hover:text-i3m-pink transition-colors"
+              >
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/">
+                <button className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                  Product
+                </button>
               </Link>
             </li>
           </ul>
