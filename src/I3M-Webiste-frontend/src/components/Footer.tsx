@@ -52,6 +52,7 @@ const Footer: React.FC = () => {
         <div>
           <h2 className="text-2xl font-bold text-i3m-purple mb-4">Resources</h2>
           <ul className="space-y-2">
+          <li><a href="/roadmap" className="hover:text-i3m-pink transition-colors">RoadMap</a></li>
             <li><a href="https://docs.google.com/document/d/1Lw4_ysvQ8Sm6jexsRpluAPXE7YaAR58i70tl8G3h7m8/edit?usp=sharing" className="hover:text-i3m-pink transition-colors">White Paper</a></li>
             <li><a href="/terms" className="hover:text-i3m-pink transition-colors">Terms and Conditions</a></li>
             <li><a href="/faq" className="hover:text-i3m-pink transition-colors">FAQs</a></li>
