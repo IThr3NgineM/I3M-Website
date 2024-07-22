@@ -5,7 +5,8 @@ import HomePage from './pages/Homepage';
 import AboutPage from './pages/About';
 import Feature from './pages/Feature';
 import Contact from './pages/Contact';
-
+import Roadmap from './pages/Roadmap';
+import FAQS from './pages/FAQS';
 import Footer from './components/Footer'
 
 const App = () => {
@@ -17,6 +18,8 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/features" element={<Feature/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/roadmap" element={<Roadmap/>} />
+        <Route path="/faq" element={<FAQS/>} />
      
         
       </Routes>
