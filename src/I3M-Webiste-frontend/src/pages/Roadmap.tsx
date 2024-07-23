@@ -48,12 +48,13 @@ const Roadmap = () => {
         Roadmap
       </h2>
       <div className="container mx-auto relative">
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-i3m-purple"></div>
+        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-i3m-purple"></div>
+        <div className="block md:hidden absolute top-0 left-0 w-full h-4 border-t-4 border-i3m-purple"></div>
         {roadmap.map((item, index) => (
           <motion.div
             key={index}
             className={`w-full md:w-1/2 p-4 mb-8 ${
-              index % 2 === 0 ? "ml-auto" : "mr-auto"
+              index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
             }`}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -66,9 +67,9 @@ const Roadmap = () => {
               <p className="text-i3m-pink mb-4">{item.duration}</p>
               <p>{item.description}</p>
               <div
-                className={`absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-i3m-pink rounded-full ${
-                  index % 2 === 0 ? "right-full mr-2" : "left-full ml-2"
-                }`}
+                className={`absolute transform ${
+                  index % 2 === 0 ? "md:-right-4" : "md:-left-4"
+                } top-1/2 -translate-y-1/2 w-4 h-4 bg-i3m-pink rounded-full hidden md:block`}
               ></div>
             </div>
           </motion.div>
