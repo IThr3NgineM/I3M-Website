@@ -3,9 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import aboutImage from "../assets/IThreeM.png";
-import Avatar1 from "../assets/avatar1.png";
-import Avatar2 from "../assets/avatar2.png";
-import Avatar3 from "../assets/avatar3.png";
+import Avatar1 from "../assets/dedan.jpeg";
+import Avatar2 from "../assets/Co-Founder.png";
+import Avatar3 from "../assets/ChiefDeveloper.png";
 import { CardContainer, CardBody, CardItem } from "../components/ui/3d-card";
 import { BackgroundBeams } from "../components/ui/background-beams";
 
@@ -129,7 +129,7 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
                 alt="Dedan Okware"
                 className="w-32 h-32 mx-auto rounded-full shadow-md"
               />
-              <p className="mt-4 text-gray-300">Founder & CEO</p>
+              <p className="mt-4 text-gray-300">Co-Founder & CEO</p>
               <div className="flex justify-center mt-4 space-x-4">
                 <a
                   href="https://x.com/Dedan_O_Okware"
