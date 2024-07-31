@@ -5,12 +5,12 @@ import HomeSection from "../new-website/pages/HomeSection";
 
 const NewWebsiteApp = () => {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<HomeSection />} />
       </Routes>
-    </Router>
+    </>
   );
 };
 
