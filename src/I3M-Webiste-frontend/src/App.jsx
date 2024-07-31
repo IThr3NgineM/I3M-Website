@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navabar";
 import HomePage from "./pages/Homepage";
 import AboutPage from "./pages/About";
@@ -13,7 +13,19 @@ import NewWebsiteApp from "./new-website/NewWebsiteApp";
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      <AppContent />
+    </Router>
+  );
+};
+
+const AppContent = () => {
+  const location = useLocation();  // Now inside the Router context
+
+  const isNewWebsite = location.pathname.startsWith("/new-website");
+
+  return (
+    <>
+      {!isNewWebsite && <Navbar />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -23,8 +35,8 @@ const App = () => {
         <Route path="/faq" element={<FAQS />} />
         <Route path="/new-website/*" element={<NewWebsiteApp />} />
       </Routes>
-      <Footer />
-    </Router>
+      {!isNewWebsite && <Footer />}
+    </>
   );
 };
 
