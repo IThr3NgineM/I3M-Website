@@ -64,11 +64,14 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="ml-auto">
-            <Link to="/">
-              <button className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors">
-                Product
-              </button>
-            </Link>
+          <a
+                href="/new-website"
+                target="_blank"
+                className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors"
+              >
+                View Products
+              </a>
+            
           </li>
         </ul>
       </div>
@@ -105,12 +108,14 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/">
-                <button className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors">
-                  Product
-                </button>
-              </Link>
-            </li>
+              <a
+                href="/new-website"
+                target="_blank"
+                className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors"
+              >
+                View Product
+              </a>
+              </li>
           </ul>
         </div>
       )}
