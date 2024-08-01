@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import HomeSection from "./pages/HomeSection";
+import Footer from "../components/Footer";
 
 const NewWebsiteApp = () => {
   return (
@@ -10,6 +11,7 @@ const NewWebsiteApp = () => {
       <Routes>
         <Route path="/" element={<HomeSection />} />
       </Routes>
+      <Footer />
     </>
   );
 };
