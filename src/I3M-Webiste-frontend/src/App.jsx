@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 import Roadmap from "./pages/Roadmap";
 import FAQS from "./pages/FAQS";
 import Footer from "./components/Footer";
-import NewWebsiteApp from "./new-website/NewWebsiteApp";
+import NewWebsiteApp from "./i3m-engine/NewWebsiteApp";
 
 const App = () => {
   return (
@@ -21,7 +21,7 @@ const App = () => {
 const AppContent = () => {
   const location = useLocation();  // Now inside the Router context
 
-  const isNewWebsite = location.pathname.startsWith("/new-website");
+  const isNewWebsite = location.pathname.startsWith("/i3m-engine");
 
   return (
     <>

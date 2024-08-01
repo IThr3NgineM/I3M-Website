@@ -1,13 +1,13 @@
 import React from "react";
-import { ImagesSlider } from "../../new-website/components/ui/images-slider";
-import { BentoGrid, BentoGridItem } from "../../new-website/components/ui/bento-grid";
-import heroImage1 from "../../new-website/assets/Game1.jpg";
-import heroImage2 from "../../new-website/assets/Game2.jpg";
-import cardImage1 from "../../new-website/assets/Game3.jpg";
-import cardImage2 from "../../new-website/assets/Game4.jpg";
-import cardVideo1 from "../../new-website/assets/CardVideo4.mp4";
-import cardVideo2 from "../../new-website/assets/CardVideo2.mp4";
-import editorImage from "../../new-website/assets/EditorImage.jpg"; // Example image for editor section
+import { ImagesSlider } from "../components/ui/images-slider";
+import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
+import heroImage1 from "../../i3m-engine/assets/Game1.jpg";
+import heroImage2 from "../../i3m-engine/assets/Game2.jpg";
+import cardImage1 from "../../i3m-engine/assets/Game3.jpg";
+import cardImage2 from "../../i3m-engine/assets/Game4.jpg";
+import cardVideo1 from "../../i3m-engine/assets/CardVideo4.mp4";
+import cardVideo2 from "../../i3m-engine/assets/CardVideo2.mp4";
+import editorImage from "../../i3m-engine/assets/EditorImage.jpg"; // Example image for editor section
 
 const HomeSection = () => {
   const heroImages = [heroImage1, heroImage2]; // Add more images as needed

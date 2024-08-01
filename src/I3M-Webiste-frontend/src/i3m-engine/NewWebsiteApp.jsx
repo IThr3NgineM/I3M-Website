@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "../new-website/components/Header";
-import HomeSection from "../new-website/pages/HomeSection";
+import Header from "./components/Header";
+import HomeSection from "./pages/HomeSection";
 
 const NewWebsiteApp = () => {
   return (
