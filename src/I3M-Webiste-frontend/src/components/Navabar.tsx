@@ -69,7 +69,7 @@ const Navbar = () => {
                 target="_blank"
                 className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors"
               >
-                View Products
+                I3M Engine
               </a>
             
           </li>
