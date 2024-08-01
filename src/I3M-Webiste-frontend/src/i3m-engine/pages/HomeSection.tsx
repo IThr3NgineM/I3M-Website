@@ -64,7 +64,7 @@ const HomeSection = () => {
       <div className="hero-section h-screen relative">
         <ImagesSlider images={heroImages} autoplay>
           <div className="absolute z-50 text-center text-white p-8">
-            <h1 className="text-5xl font-bold">Welcome to I3M</h1>
+            <h1 className="text-5xl font-bold">🎮 I3M Engine ⚙️</h1>
             <p className="mt-4 text-lg">
               Explore the Future of Gaming and Virtual Worlds
             </p>

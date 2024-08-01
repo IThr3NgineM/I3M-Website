@@ -84,7 +84,7 @@ const HeroSection = () => {
                 className="text-5xl font-bold text-i3m-purple"
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
-                Welcome to I3M
+                Welcome to <span className="italic">IThreeM</span>
               </motion.h1>
               <motion.h2
                 initial={{ y: -50 }}
