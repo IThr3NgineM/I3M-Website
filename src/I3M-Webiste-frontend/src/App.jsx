@@ -33,7 +33,7 @@ const AppContent = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/roadmap" element={<Roadmap />} />
         <Route path="/faq" element={<FAQS />} />
-        <Route path="/new-website/*" element={<NewWebsiteApp />} />
+        <Route path="/i3m-engine/*" element={<NewWebsiteApp />} />
       </Routes>
       {!isNewWebsite && <Footer />}
     </>
