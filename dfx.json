@@ -9,7 +9,15 @@
                 "src/I3M-Webiste-frontend/dist"
             ],
             "type": "assets",
-            "workspace": "I3M-Webiste-frontend"
+            "workspace": "I3M-Webiste-frontend",
+            "domains": [
+                "https://u6vfg-kyaaa-aaaak-akvva-cai.icp0.io",
+                "https://u6vfg-kyaaa-aaaak-akvva-cai.icp0.io/i3m-engine"
+            ],
+            "routes": {
+                "/": "/index.html",
+                "/i3m-engine": "/i3m-engine/index.html"
+            }
         }
     },
     "defaults": {
