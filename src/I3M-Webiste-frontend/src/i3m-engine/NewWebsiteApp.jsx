@@ -1,21 +1,18 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-<<<<<<< HEAD:src/I3M-Webiste-frontend/src/i3m-engine/NewWebsiteApp.jsx
 import Header from "./components/Header";
 import HomeSection from "./pages/HomeSection";
 import Footer from "../components/Footer";
-=======
-import Header from "../new-website/components/Header";
-import HomeSection from "../new-website/pages/HomeSection";
-import ProductPage from "../new-website/pages/ProductPage";
->>>>>>> juliet:src/I3M-Webiste-frontend/src/new-website/NewWebsiteApp.jsx
+import EngineHeader from "../i3m-engine/components/Header";
+import EngineHomeSection from "../i3m-engine/pages/HomeSection";
+import ProductPage from "../i3m-engine/pages/ProductPage";
 
 const NewWebsiteApp = () => {
   return (
     <>
-      <Header />
+      <EngineHeader />
       <Routes>
-        <Route path="/" element={<HomeSection />} />
+        <Route path="/" element={<EngineHomeSection />} />
         <Route path="product" element={<ProductPage />} />
       </Routes>
       <Footer />

@@ -1,7 +1,7 @@
 import React from "react";
-import videoSrc from "../../new-website/assets/CardVideo3.mp4";
-import { EvervaultCard } from "../../new-website/components/ui/evervault-card";
-import engineImage from "../../new-website/assets/Game2.jpg"; 
+import videoSrc from "../../i3m-engine/assets/CardVideo3.mp4";
+import { EvervaultCard } from "../../i3m-engine/components/ui/evervault-card";
+import engineImage from "../../i3m-engine/assets/Game2.jpg"; 
 
 const ProductPage = () => {
   return (

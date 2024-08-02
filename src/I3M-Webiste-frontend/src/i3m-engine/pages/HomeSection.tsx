@@ -9,7 +9,7 @@ import cardVideo1 from "../../i3m-engine/assets/CardVideo4.mp4";
 import cardVideo2 from "../../i3m-engine/assets/CardVideo2.mp4";
 import editorImage from "../../i3m-engine/assets/EditorImage.jpg"; // Example image for editor section
 
-const HomeSection = () => {
+const EngineHomeSection = () => {
   const heroImages = [heroImage1, heroImage2]; // Add more images as needed
 
   const cardItems = [
@@ -114,4 +114,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
+export default EngineHomeSection;

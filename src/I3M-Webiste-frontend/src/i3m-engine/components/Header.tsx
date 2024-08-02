@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/IThreeM.png";
 import { FaSearch, FaBars, FaUser } from "react-icons/fa";
 
-const Navbar = () => {
+const EngineHeader = () => {
   const [activeMenu, setActiveMenu] = useState<string>("");
 
   const handleMouseEnter = (menu: string) => {
@@ -83,4 +83,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default EngineHeader;
