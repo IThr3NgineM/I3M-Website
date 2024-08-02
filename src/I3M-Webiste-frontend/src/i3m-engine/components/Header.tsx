@@ -41,7 +41,7 @@ const EngineHeader = () => {
             onMouseLeave={handleMouseLeave}
           >
             <Link
-              to="/i3m-engine/solutions"
+              to="solution"
               className="hover:text-i3m-pink transition-colors"
             >
               Solutions
@@ -50,21 +50,21 @@ const EngineHeader = () => {
           </div>
           {/* Add more menu items similarly */}
           <Link
-            to="/i3m-engine/resources"
+            to="resources"
             className="hover:text-i3m-pink transition-colors"
           >
             Resources
           </Link>
           <Link
-            to="/i3m-engine/community"
+            to="community"
             className="hover:text-i3m-pink transition-colors"
           >
             Community
           </Link>
-          <Link to="/i3m-engine/learn" className="hover:text-i3m-pink transition-colors">
+          <Link to="learn" className="hover:text-i3m-pink transition-colors">
             Learn
           </Link>
-          <Link to="i3m-engine/support" className="hover:text-i3m-pink transition-colors">
+          <Link to="support" className="hover:text-i3m-pink transition-colors">
             Support
           </Link>
         </nav>
