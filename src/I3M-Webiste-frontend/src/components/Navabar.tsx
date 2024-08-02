@@ -65,7 +65,7 @@ const Navbar = () => {
           </li>
           <li className="ml-auto">
           <a
-                href="/new-website"
+                href="/i3m-engine"
                 target="_blank"
                 className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors"
               >
@@ -109,7 +109,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/new-website"
+                href="/i3m-engine"
                 target="_blank"
                 className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors"
               >
@@ -120,6 +120,7 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    
   );
 };
 
