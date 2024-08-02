@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "./components/Navabar";
 import HomePage from "./pages/Homepage";
 import AboutPage from "./pages/About";
@@ -19,7 +24,7 @@ const App = () => {
 };
 
 const AppContent = () => {
-  const location = useLocation();  // Now inside the Router context
+  const location = useLocation(); 
 
   const isNewWebsite = location.pathname.startsWith("/i3m-engine");
 
