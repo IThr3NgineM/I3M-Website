@@ -8,6 +8,7 @@ import SolutionPage from "../i3m-engine/pages/SolutionPage";
 import ResourcePage from "../i3m-engine/pages/ResourcePage";
 import CommunityPage from "../i3m-engine/pages/CommunityPage";
 import LearnPage from "../i3m-engine/pages/LearnPage";
+import SupportPage from "../i3m-engine/pages/SupportPage";
 
 const NewWebsiteApp = () => {
   return (
@@ -20,6 +21,7 @@ const NewWebsiteApp = () => {
         <Route path="resources" element={<ResourcePage />} />
         <Route path="community" element={<CommunityPage />} />
         <Route path="learn" element={<LearnPage />} />
+        <Route path="support" element={<SupportPage />} />
       </Routes>
       <Footer />
     </>
