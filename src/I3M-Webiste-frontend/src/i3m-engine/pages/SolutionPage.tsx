@@ -8,7 +8,7 @@ import industryImage3 from "../assets/industryImage3.jpg";
 
 const SolutionsPage = () => {
   return (
-    <div className="solutions-page bg-i3m-dark text-white">
+    <div className="solutions-page bg-i3m-dark text-white ">
       {/* Gaming Solutions */}
       <section className="gaming-solutions my-0 bg-i3m-dark text-white">
         <h2 className="text-4xl font-bold text-center mb-10 py-2">
@@ -71,8 +71,8 @@ const SolutionsPage = () => {
       </section>
 
       {/* Industry Solutions */}
-      <section className="industry-solutions my-20">
-        <h2 className="text-4xl font-bold text-center mb-10">
+      <section className="industry-solutions my-10 bg-i3m-dark text-white">
+        <h2 className="text-4xl font-bold text-center mb-10 mt-2">
           Industry Solutions
         </h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-20">
@@ -127,7 +127,7 @@ const SolutionsPage = () => {
       </section>
 
       {/* Blockchain Solutions */}
-      <section className="blockchain-solutions my-20">
+      <section className="blockchain-solutions my-20  bg-i3m-dark text-white ">
         <h2 className="text-4xl font-bold text-center mb-10">
           Blockchain Solutions
         </h2>
