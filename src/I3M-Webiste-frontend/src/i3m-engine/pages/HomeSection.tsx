@@ -73,7 +73,7 @@ const EngineHomeSection = () => {
       </div>
 
       {/* Card Section */}
-      <div className="card-section my-20">
+      <div className="card-section my-20 sm:px-2">
         <h2 className="text-3xl font-bold text-center text-i3m-pink mb-10">
           Featured Games
         </h2>
@@ -94,13 +94,13 @@ const EngineHomeSection = () => {
         <h2 className="text-3xl font-bold text-center text-i3m-pink mb-10">
           Explore the I3M Editor
         </h2>
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 px-2">
           <img
             src={editorImage}
             alt="I3M Editor Glimpse"
             className="rounded-lg shadow-lg w-full md:w-1/2"
           />
-          <div className="md:w-1/2 text-lg text-black space-y-4">
+          <div className="md:w-1/2 text-lg text-black space-y-4 px-2">
             <p>
               The I3M Editor is an innovative, robust, and user-friendly platform designed to empower creators, developers, and enthusiasts in the virtual world space. With the I3M Editor, you are not just limited to using predefined templates or tools; instead, you have the full freedom to design and customize every aspect of your virtual environment, whether it's for gaming, simulations, educational purposes, or social interactions.
             </p>
