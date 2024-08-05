@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                 <h1 className="md:font-bold text-sm md:text-lg text-white">Github</h1>
               </div>
             </a>
-            <a href="https://discord.gg/7qhQz9Gn" target="_blank" rel="noopener noreferrer">
+            <a href="https://discord.gg/mHv8NG3U" target="_blank" rel="noopener noreferrer">
               <div className="flex flex-col items-center justify-center p-1">
                 <FontAwesomeIcon icon={faDiscord} className="text-white x" />
                 <h1 className="md:font-bold text-sm md:text-lg text-white">Discord</h1>
