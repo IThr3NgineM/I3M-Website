@@ -2,42 +2,16 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Logo from "../assets/IThreeM.png";
 import BackgroundVideo from "../assets/backgroundvideo.mp4";
-import DogVideo from "../assets/background.mp4";
 import { useNavigate } from "react-router-dom";
 import { CardContainer, CardBody, CardItem } from "../components/ui/3d-card";
 
 const HeroSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const dogVideoRef = useRef<HTMLVideoElement>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.5;
-    }
-    if (dogVideoRef.current) {
-      dogVideoRef.current.playbackRate = 0.5;
-
-      const handleTimeUpdate = () => {
-        if (dogVideoRef.current) {
-          const { currentTime, duration } = dogVideoRef.current;
-          if (currentTime >= duration) {
-            dogVideoRef.current.currentTime = 0;
-            dogVideoRef.current.play();
-          }
-        }
-      };
-
-      dogVideoRef.current.addEventListener("timeupdate", handleTimeUpdate);
-
-      return () => {
-        if (dogVideoRef.current) {
-          dogVideoRef.current.removeEventListener(
-            "timeupdate",
-            handleTimeUpdate
-          );
-        }
-      };
     }
   }, []);
 
@@ -118,15 +92,6 @@ const HeroSection = () => {
 
       {/* Core Components Section */}
       <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
-        <video
-          ref={dogVideoRef}
-          className="absolute inset-0 w-full h-full object-cover z-0"
-          src={DogVideo}
-          autoPlay
-          muted
-          playsInline
-        ></video>
-
         <div className="relative z-10">
           <motion.div
             className="mt-10"
@@ -198,7 +163,7 @@ const HeroSection = () => {
                   <p className="text-white">
                     A comprehensive toolkit and SDK for developers, featuring
                     tools for asset creation, scene setup, and game development
-                    workflows.User-friendly interface for asset management. Integration with popular 3D model
+                    workflows. User-friendly interface for asset management. Integration with popular 3D model
                     formats. Extensive documentation and tutorials for
                     developers.
                   </p>
