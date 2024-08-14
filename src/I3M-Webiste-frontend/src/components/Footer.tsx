@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             <li><Link to="/" className="hover:text-i3m-pink transition-colors">Home</Link></li>
             <li><Link to="/about" className="hover:text-i3m-pink transition-colors">About</Link></li>
             <li><Link to="/features" className="hover:text-i3m-pink transition-colors">Features</Link></li>
-           
+
           </ul>
         </div>
         {/* Additional Links Grid */}
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
           <h2 className="text-2xl font-bold text-i3m-purple mb-4">Resources</h2>
           <ul className="space-y-2">
           <li><a href="/roadmap" className="hover:text-i3m-pink transition-colors">RoadMap</a></li>
-            <li><a href="https://docs.google.com/document/d/1Lw4_ysvQ8Sm6jexsRpluAPXE7YaAR58i70tl8G3h7m8/edit?usp=sharing" className="hover:text-i3m-pink transition-colors">White Paper</a></li>
+            {/* <li><a href="https://docs.google.com/document/d/1Lw4_ysvQ8Sm6jexsRpluAPXE7YaAR58i70tl8G3h7m8/edit?usp=sharing" className="hover:text-i3m-pink transition-colors">White Paper</a></li> */}
             <li><a href="/terms" className="hover:text-i3m-pink transition-colors">Terms and Conditions</a></li>
             <li><a href="/faq" className="hover:text-i3m-pink transition-colors">FAQs</a></li>
           </ul>
