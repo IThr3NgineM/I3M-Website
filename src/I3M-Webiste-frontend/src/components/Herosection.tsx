@@ -94,16 +94,16 @@ const HeroSection = () => {
                 initial={{ y: -50 }}
                 animate={{ y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="text-5xl font-bold text-i3m-purple"
+                className="text-5xl font-bold text-white"
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
-                Experience the Future with <span className="italic">IThreeM</span>
+                Experience the Future 
               </motion.h1>
               <motion.h2
                 initial={{ y: -50 }}
                 animate={{ y: 0 }}
                 transition={{ delay: 0.6 }}
-                className="text-2xl font-bold text-i3m-purple mt-4"
+                className="text-2xl font-bold text-white mt-4"
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
                 Redefining Boundaries of 3D Virtual Worlds
