@@ -298,7 +298,7 @@ const HeroSection = () => {
             >
               <div className="flex justify-center">
                 <img
-                  src={DiamondIcon} // Use the imported diamond icon
+                  src={DiamondIcon} 
                   alt="Icon"
                   className="w-16 h-16"
                 />
