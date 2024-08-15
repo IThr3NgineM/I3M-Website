@@ -158,10 +158,10 @@ const HeroSection = () => {
                     className="w-full h-72 object-cover transition-transform duration-500 transform hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-4">
-                    <h3 className="text-xl font-bold text-i3m-purple mb-4">
+                    <h3 className="text-2xl font-bold text-i3m-purple mb-4">
                       I3M-Engine-Core
                     </h3>
-                    <p className="text-white">
+                    <p className="text-white text-xl">
                       The heart of the I3M project, this repository includes the
                       core functionalities of the game engine, such as rendering,
                       physics, and input systems.
@@ -188,10 +188,10 @@ const HeroSection = () => {
                     className="w-full h-72 object-cover transition-transform duration-500 transform hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-4">
-                    <h3 className="text-xl font-bold text-i3m-purple mb-4">
+                    <h3 className="text-2xl font-bold text-i3m-purple mb-4">
                       I3M-Chain-Bridge
                     </h3>
-                    <p className="text-white">
+                    <p className="text-white text-xl">
                       Facilitates seamless integration between the game engine and
                       the ICP blockchain, enabling features like token
                       transactions, smart contracts, and digital asset management.
@@ -218,10 +218,10 @@ const HeroSection = () => {
                     className="w-full h-72 object-cover transition-transform duration-500 transform hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-4">
-                    <h3 className="text-xl font-bold text-i3m-purple mb-4">
+                    <h3 className="text-2xl font-bold text-i3m-purple mb-4">
                       I3M-Forge
                     </h3>
-                    <p className="text-white">
+                    <p className="text-white text-xl">
                       A comprehensive toolkit and SDK for developers, featuring
                       tools for asset creation, scene setup, and game development
                       workflows.
@@ -258,7 +258,7 @@ const HeroSection = () => {
             >
               <div className="flex justify-center">
                 <img
-                  src={DiamondIcon} // Use the imported diamond icon
+                  src={DiamondIcon}
                   alt="Icon"
                   className="w-16 h-16"
                 />
@@ -278,7 +278,7 @@ const HeroSection = () => {
             >
               <div className="flex justify-center">
                 <img
-                  src={DiamondIcon} // Use the imported diamond icon
+                  src={DiamondIcon} 
                   alt="Icon"
                   className="w-16 h-16"
                 />
