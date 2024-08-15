@@ -131,7 +131,7 @@ const HeroSection = () => {
       </div>
 
       {/* Core Components Section */}
-      <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-i3m-dark text-white">
+      <div className="relative py-20 px-4 sm:px-2 lg:px-8 bg-i3m-dark text-white">
         <div className="relative z-10">
           <motion.div
             className="mt-10"
@@ -250,7 +250,7 @@ const HeroSection = () => {
           >
             Discover I3M Highlights
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm: px-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div
               className="highlight-card bg-gradient-to-r from-i3m-purple to-i3m-pink p-8 rounded-lg shadow-lg"
               initial={{ rotate: -45, y: -100 }}
