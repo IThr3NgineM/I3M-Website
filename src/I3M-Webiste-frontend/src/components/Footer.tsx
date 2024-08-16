@@ -18,12 +18,12 @@ const Footer: React.FC = () => {
                 <h1 className="md:font-bold text-sm md:text-lg text-white">Twitter(X)</h1>
               </div>
             </a>
-            <a href="https://github.com/IThreeM" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://github.com/IThreeM" target="_blank" rel="noopener noreferrer">
               <div className="flex flex-col items-center justify-center p-1">
                 <FontAwesomeIcon icon={faGithub} className="text-white x" />
                 <h1 className="md:font-bold text-sm md:text-lg text-white">Github</h1>
               </div>
-            </a>
+            </a> */}
             <a href="https://discord.gg/rppWKwGrhf" target="_blank" rel="noopener noreferrer">
               <div className="flex flex-col items-center justify-center p-1">
                 <FontAwesomeIcon icon={faDiscord} className="text-white x" />
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             <li><Link to="/" className="hover:text-i3m-pink transition-colors">Home</Link></li>
             <li><Link to="/about" className="hover:text-i3m-pink transition-colors">About</Link></li>
             <li><Link to="/features" className="hover:text-i3m-pink transition-colors">Features</Link></li>
-           
+
           </ul>
         </div>
         {/* Additional Links Grid */}
@@ -53,18 +53,19 @@ const Footer: React.FC = () => {
           <h2 className="text-2xl font-bold text-i3m-purple mb-4">Resources</h2>
           <ul className="space-y-2">
           <li><a href="/roadmap" className="hover:text-i3m-pink transition-colors">RoadMap</a></li>
-            <li><a href="https://docs.google.com/document/d/1Lw4_ysvQ8Sm6jexsRpluAPXE7YaAR58i70tl8G3h7m8/edit?usp=sharing" className="hover:text-i3m-pink transition-colors">White Paper</a></li>
+            {/* <li><a href="https://docs.google.com/document/d/1Lw4_ysvQ8Sm6jexsRpluAPXE7YaAR58i70tl8G3h7m8/edit?usp=sharing" className="hover:text-i3m-pink transition-colors">White Paper</a></li> */}
             <li><a href="/terms" className="hover:text-i3m-pink transition-colors">Terms and Conditions</a></li>
             <li><a href="/faq" className="hover:text-i3m-pink transition-colors">FAQs</a></li>
           </ul>
         </div>
       </div>
       <p className="mt-8 text-gray-500 text-sm">
-        All rights reserved by{" "}
-        <a href="https://dashboard.internetcomputer.org/canister/ezu5v-7qaaa-aaaam-acpbq-cai" className="text-i3m-pink font-bold">
-          I3M
-        </a>{" "}
-      </p>
+        Copyright &copy; 2024{new Date().getFullYear() > 2024 ? `-${new Date().getFullYear()}` : ""} All rights reserved by{" "}
+        <a href="#" className="text-i3m-pink font-bold">
+            IThreeM - I3M
+        </a>
+        </p>
+
     </footer>
   );
 };

@@ -19,7 +19,7 @@ const roadmap = [
     title: "Phase 3: Editor Development and Enhancement",
     duration: "In Progress",
     description:
-      "Develop I3M Editor, integrate advanced editing features, and provide detailed tutorials and guides.",
+      "Develop I3M Editor, integrate advanced editing features, and provide detailed tutorials and guides.ICP Integration to the I3M Engine Ecosystem.",
   },
   {
     title: "Phase 4: Community Engagement and Ecosystem Building",
@@ -29,7 +29,7 @@ const roadmap = [
   },
   {
     title: "Phase 5: Commercialization and Monetization",
-    duration: "1 Years",
+    duration: "A Year",
     description:
       "Implement monetization strategies, launch marketplace for digital assets and extensions, and execute marketing campaigns.",
   },
