@@ -6,72 +6,83 @@ import supportImage3 from "../assets/support3.jpg";
 
 const SupportPage = () => {
   return (
-    <div className="support-page">
+    <div className="support-page bg-i3m-dark text-white min-h-screen">
+      {/* Hero Section */}
+      <section className="hero-section text-center py-20 bg-gradient-to-b from-i3m-purple via-i3m-dark to-i3m-pink relative">
+        <h1 className="text-5xl font-bold mb-6">I3M Support Services</h1>
+        <p className="text-lg mb-10 max-w-3xl mx-auto">
+          At I3M, we are dedicated to helping you succeed. Explore our support services designed to assist you every step of the way.
+        </p>
+        <div className="inline-block bg-i3m-dark rounded-lg p-4 shadow-lg">
+          <h2 className="text-2xl font-bold">Discover Our Support</h2>
+          <p className="mt-2">Guides, Forums, 24/7 Support & More</p>
+          <Link to="/documentation" className="mt-4 inline-block bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-6 rounded-lg transition-colors">
+            Explore Documentation
+          </Link>
+        </div>
+      </section>
+
       {/* Support Overview */}
       <section className="support-overview py-20">
-        <h2 className="text-4xl font-bold text-center mb-10">I3M Support Services</h2>
+        <h2 className="text-4xl font-bold text-center mb-10">Comprehensive Support at Your Fingertips</h2>
         <p className="text-center text-lg max-w-4xl mx-auto mb-20">
-          At I3M, we are dedicated to helping you succeed. Explore our support services designed to assist you every step of the way, from documentation and community forums to customer service and premium support packages.
+          We offer a range of support options to ensure your success, from in-depth documentation to community-driven discussions and premium services.
         </p>
       </section>
 
-      {/* Documentation */}
-      <section className="documentation my-20">
-        <h3 className="text-3xl font-bold text-center mb-10">Documentation</h3>
-        <p className="text-center text-lg max-w-4xl mx-auto mb-10">
-          Access a wide range of technical guides, FAQs, and detailed documentation to help you navigate the I3M platform. Whether you’re a beginner or an advanced user, our resources are here to assist you.
+      {/* Documentation Section */}
+      <section className="documentation my-20 text-center py-20 bg-gradient-to-r from-i3m-purple to-i3m-dark rounded-xl mx-10 shadow-lg">
+        <h3 className="text-3xl font-bold mb-6">Documentation</h3>
+        <p className="text-lg mb-6 max-w-4xl mx-auto">
+          Access technical guides, FAQs, and detailed documentation to help you navigate the I3M platform.
         </p>
-        <div className="text-center">
-          <Link to="/documentation" className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-3 px-8 rounded-lg transition-colors">
-            Explore Documentation →
-          </Link>
-        </div>
+        <Link to="/documentation" className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-6 rounded-lg transition-colors">
+          Explore Documentation →
+        </Link>
       </section>
 
-      {/* Community Support */}
-      <section className="community-support my-20 bg-gray-100 py-20">
-        <h3 className="text-3xl font-bold text-center mb-10">Community Support</h3>
-        <p className="text-center text-lg max-w-4xl mx-auto mb-10">
-          Join our vibrant I3M community where you can connect with other developers, share knowledge, and get peer-to-peer support. Our forums and social media channels are the perfect place to find answers and collaborate on projects.
+      {/* Community Support Section */}
+      <section className="community-support my-20 bg-gradient-to-l from-i3m-pink via-i3m-dark to-i3m-purple py-20 text-center rounded-xl mx-10 shadow-lg">
+        <h3 className="text-3xl font-bold mb-6">Community Support</h3>
+        <p className="text-lg mb-6 max-w-4xl mx-auto">
+          Join our vibrant community to connect with other developers, share knowledge, and get peer-to-peer support.
         </p>
-        <div className="text-center">
-          <Link to="/community" className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-3 px-8 rounded-lg transition-colors">
-            Join the Community →
-          </Link>
-        </div>
+        <Link to="/i3m-engine/community" className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-6 rounded-lg transition-colors">
+          Join the Community →
+        </Link>
       </section>
 
-      {/* Customer Service */}
-      <section className="customer-service my-20">
-        <h3 className="text-3xl font-bold text-center mb-10">Customer Service</h3>
+      {/* Customer Service Section */}
+      <section className="customer-service my-20 text-center py-20 bg-gradient-to-b from-i3m-purple to-i3m-dark rounded-xl mx-10 shadow-lg">
+        <h3 className="text-3xl font-bold mb-10">Customer Service</h3>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="service-option p-6 shadow-lg rounded-lg bg-white">
+          <div className="service-option p-6 shadow-lg rounded-lg bg-transparent border border-gray-600">
             <img src={supportImage1} alt="Email Support" className="w-full h-48 object-cover mb-4 rounded-lg" />
-            <h4 className="text-2xl font-bold">Email Support</h4>
-            <p className="text-lg my-4">
-              Reach out to our support team via email for any questions or assistance you need with I3M. Our team is here to help.
+            <h4 className="text-2xl font-bold text-white">Email Support</h4>
+            <p className="text-lg my-4 text-white">
+              Reach out to our support team via email for any questions or assistance.
             </p>
             <a href="mailto:support@i3m.com" className="text-i3m-pink font-bold">
               Contact via Email →
             </a>
           </div>
 
-          <div className="service-option p-6 shadow-lg rounded-lg bg-white">
+          <div className="service-option p-6 shadow-lg rounded-lg bg-transparent border border-gray-600">
             <img src={supportImage2} alt="Live Chat" className="w-full h-48 object-cover mb-4 rounded-lg" />
-            <h4 className="text-2xl font-bold">Live Chat</h4>
-            <p className="text-lg my-4">
-              Need immediate help? Our live chat support is available to answer your questions in real-time. Start a chat now.
+            <h4 className="text-2xl font-bold text-white">Live Chat</h4>
+            <p className="text-lg my-4 text-white">
+              Need immediate help? Our live chat support is available to answer your questions in real-time.
             </p>
             <Link to="/live-chat" className="text-i3m-pink font-bold">
               Start a Live Chat →
             </Link>
           </div>
 
-          <div className="service-option p-6 shadow-lg rounded-lg bg-white">
+          <div className="service-option p-6 shadow-lg rounded-lg bg-transparent border border-gray-600">
             <img src={supportImage3} alt="Phone Support" className="w-full h-48 object-cover mb-4 rounded-lg" />
-            <h4 className="text-2xl font-bold">Phone Support</h4>
-            <p className="text-lg my-4">
-              Speak directly with our support team by calling our customer service line. We are here to assist you with any issues.
+            <h4 className="text-2xl font-bold text-white">Phone Support</h4>
+            <p className="text-lg my-4 text-white">
+              Speak directly with our support team by calling our customer service line.
             </p>
             <a href="tel:+1234567890" className="text-i3m-pink font-bold">
               Call Us →
@@ -80,30 +91,26 @@ const SupportPage = () => {
         </div>
       </section>
 
-      {/* Training */}
-      <section className="training my-20 bg-gray-100 py-20">
-        <h3 className="text-3xl font-bold text-center mb-10">Training & Resources</h3>
-        <p className="text-center text-lg max-w-4xl mx-auto mb-10">
-          Enhance your skills with our I3M training programs and resources. Whether you’re looking to get started or advance your expertise, we offer training to suit your needs.
+      {/* Training Section */}
+      <section className="training my-20 bg-gradient-to-r from-i3m-pink to-i3m-purple py-20 text-center rounded-xl mx-10 shadow-lg">
+        <h3 className="text-3xl font-bold mb-6">Training & Resources</h3>
+        <p className="text-lg mb-6 max-w-4xl mx-auto">
+          Enhance your skills with our I3M training programs and resources. We offer training to suit your needs.
         </p>
-        <div className="text-center">
-          <Link to="/training" className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-3 px-8 rounded-lg transition-colors">
-            View Training Options →
-          </Link>
-        </div>
+        <Link to="/i3m-engine/learn" className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-6 rounded-lg transition-colors">
+          View Training Options →
+        </Link>
       </section>
 
-      {/* Premium Support */}
-      <section className="premium-support my-20">
-        <h3 className="text-3xl font-bold text-center mb-10">Premium Support</h3>
-        <p className="text-center text-lg max-w-4xl mx-auto mb-10">
-          For businesses and advanced users requiring additional support, our Premium Support packages offer 24/7 assistance, dedicated account managers, and more. Ensure your success with tailored support options.
+      {/* Premium Support Section */}
+      <section className="premium-support my-20 bg-gradient-to-l from-i3m-purple to-i3m-dark py-20 text-center rounded-xl mx-10 shadow-lg">
+        <h3 className="text-3xl font-bold mb-6">Premium Support</h3>
+        <p className="text-lg mb-6 max-w-4xl mx-auto">
+          For businesses and advanced users, our Premium Support packages offer 24/7 assistance and more.
         </p>
-        <div className="text-center">
-          <Link to="/premium-support" className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-3 px-8 rounded-lg transition-colors">
-            Learn More About Premium Support →
-          </Link>
-        </div>
+        <Link to="/premium-support" className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-6 rounded-lg transition-colors">
+          Learn More About Premium Support →
+        </Link>
       </section>
     </div>
   );
