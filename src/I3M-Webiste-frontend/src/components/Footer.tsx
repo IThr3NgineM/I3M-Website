@@ -18,12 +18,12 @@ const Footer: React.FC = () => {
                 <h1 className="md:font-bold text-sm md:text-lg text-white">Twitter(X)</h1>
               </div>
             </a>
-            <a href="https://github.com/IThreeM" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://github.com/IThreeM" target="_blank" rel="noopener noreferrer">
               <div className="flex flex-col items-center justify-center p-1">
                 <FontAwesomeIcon icon={faGithub} className="text-white x" />
                 <h1 className="md:font-bold text-sm md:text-lg text-white">Github</h1>
               </div>
-            </a>
+            </a> */}
             <a href="https://discord.gg/rppWKwGrhf" target="_blank" rel="noopener noreferrer">
               <div className="flex flex-col items-center justify-center p-1">
                 <FontAwesomeIcon icon={faDiscord} className="text-white x" />
