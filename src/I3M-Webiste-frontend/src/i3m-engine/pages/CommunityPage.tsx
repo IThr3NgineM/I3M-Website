@@ -1,11 +1,17 @@
 import React from "react";
-import { FaDiscord, FaWhatsapp, FaLinkedin, FaTwitter } from "react-icons/fa";
-import communityVideo from "../assets/community.mp4"; 
-import communityImage from "../assets/community.png"; 
+import {
+  FaDiscord,
+  FaWhatsapp,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+import communityVideo from "../assets/community.mp4";
+import communityImage from "../assets/community.png";
 import communityImage1 from "../assets/Community1.png";
 import communityImage2 from "../assets/Community2.png";
-import { StarsBackground } from "../../i3m-engine/components/ui/stars-background"; 
-import { ShootingStars } from "../../i3m-engine/components/ui/shooting-stars";    
+import { StarsBackground } from "../../i3m-engine/components/ui/stars-background";
+import { ShootingStars } from "../../i3m-engine/components/ui/shooting-stars";
 
 const CommunityPage = () => {
   return (
@@ -28,7 +34,9 @@ const CommunityPage = () => {
 
       {/* Social Media Links */}
       <section className="social-media-links my-20 relative z-10 bg-i3m-dark">
-        <h2 className="text-4xl font-bold text-center text-i3m-pink mb-10">Connect with Us</h2>
+        <h2 className="text-4xl font-bold text-center text-i3m-pink mb-10">
+          Connect with Us
+        </h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           <a
             href="https://tr.ee/fno9Eg6CTi"
@@ -38,7 +46,9 @@ const CommunityPage = () => {
           >
             <FaDiscord size={50} className="mx-auto mb-4" />
             <h3 className="text-2xl font-bold">Discord</h3>
-            <p className="text-lg mt-2">Join our Discord server to chat with other developers.</p>
+            <p className="text-lg mt-2">
+              Join our Discord server to chat with other developers.
+            </p>
           </a>
 
           <a
@@ -49,7 +59,9 @@ const CommunityPage = () => {
           >
             <FaWhatsapp size={50} className="mx-auto mb-4" />
             <h3 className="text-2xl font-bold">WhatsApp</h3>
-            <p className="text-lg mt-2">Stay connected with our WhatsApp group.</p>
+            <p className="text-lg mt-2">
+              Stay connected with our WhatsApp group.
+            </p>
           </a>
 
           <a
@@ -60,7 +72,9 @@ const CommunityPage = () => {
           >
             <FaLinkedin size={50} className="mx-auto mb-4" />
             <h3 className="text-2xl font-bold">LinkedIn</h3>
-            <p className="text-lg mt-2">Follow us on LinkedIn for professional updates.</p>
+            <p className="text-lg mt-2">
+              Follow us on LinkedIn for professional updates.
+            </p>
           </a>
 
           <a
@@ -71,14 +85,31 @@ const CommunityPage = () => {
           >
             <FaTwitter size={50} className="mx-auto mb-4" />
             <h3 className="text-2xl font-bold">X (Twitter)</h3>
-            <p className="text-lg mt-2">Follow us on X for the latest news and updates.</p>
+            <p className="text-lg mt-2">
+              Follow us on X for the latest news and updates.
+            </p>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@ithr3m"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-card p-4 shadow-lg rounded-lg text-center bg-i3m-dark text-white"
+          >
+            <FaYoutube size={50} className="mx-auto mb-4" />
+            <h3 className="text-2xl font-bold">YouTube</h3>
+            <p className="text-lg mt-2">
+              Join our YouTube to get to Learn and get insights about iThreeM.
+            </p>
           </a>
         </div>
       </section>
 
       {/* Community Highlights */}
       <section className="community-highlights my-20 relative z-10 bg-i3m-dark">
-        <h2 className="text-4xl font-bold text-center text-i3m-pink mb-10">Community Highlights</h2>
+        <h2 className="text-4xl font-bold text-center text-i3m-pink mb-10">
+          Community Highlights
+        </h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="highlight-card p-4 shadow-lg rounded-lg bg-i3m-purple">
             <img
@@ -88,7 +119,8 @@ const CommunityPage = () => {
             />
             <h3 className="text-2xl font-bold">Event: Education Hackathon</h3>
             <p className="text-lg my-4">
-              Our Founder had the chance of been invited to Kabarak to speak on the shaping on the Financial Projections 
+              Our Founder had the chance of been invited to Kabarak to speak on
+              the shaping on the Financial Projections
             </p>
             <button className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors">
               Learn More →
@@ -103,8 +135,9 @@ const CommunityPage = () => {
             />
             <h3 className="text-2xl font-bold">Event: StartUps on ICP </h3>
             <p className="text-lg my-4">
-            We had a chance to be speak on X space on Chhallenges people experience when starting a start up and how e overcame and 
-            how to handle the challenges .
+              We had a chance to be speak on X space on Challenges people
+              experience when starting a start up and how e overcame and how to
+              handle the challenges .
             </p>
             <button className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors">
               Learn More →
@@ -117,10 +150,13 @@ const CommunityPage = () => {
               alt="Community Event"
               className="w-full h-48 object-cover mb-4 rounded-lg"
             />
-            <h3 className="text-2xl font-bold">Event:Building Solutions on ICP</h3>
+            <h3 className="text-2xl font-bold">
+              Event:Building Solutions on ICP
+            </h3>
             <p className="text-lg my-4">
-              I3M had the chance to tell the story on what we were building and how it will help the targeted user 
-              and also what problems the current targeted user are facing.
+              I3M had the chance to tell the story on what we were building and
+              how it will help the targeted user and also what problems the
+              current targeted user are facing.
             </p>
             <button className="bg-i3m-pink hover:bg-i3m-purple text-white font-bold py-2 px-4 rounded-lg transition-colors">
               Learn More →
@@ -131,7 +167,9 @@ const CommunityPage = () => {
 
       {/* Embedded Video Section */}
       <section className="video-section my-20 relative z-10 bg-i3m-dark">
-        <h2 className="text-4xl font-bold text-center text-i3m-pink mb-10">Community Spotlight</h2>
+        <h2 className="text-4xl font-bold text-center text-i3m-pink mb-10">
+          Community Spotlight
+        </h2>
         <div className="max-w-4xl mx-auto relative">
           <div className="absolute inset-0 mix-blend-overlay">
             <div className="bg-i3m-purple opacity-60 absolute inset-0"></div>
