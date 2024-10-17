@@ -129,7 +129,7 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
                 alt="Dedan Okware"
                 className="w-32 h-32 mx-auto rounded-full shadow-md"
               />
-              <p className="mt-4 text-gray-300">Founder & CEO</p>
+              <p className="mt-4 text-gray-300">Founder</p>
               <div className="flex justify-center mt-4 space-x-4">
                 <a
                   href="https://x.com/Dedan_O_Okware"
@@ -217,9 +217,7 @@ const About: React.FC<BuyProps> = ({ handleConnectWallet }) => {
                 alt="Winfred Muusi"
                 className="w-32 h-32 mx-auto rounded-full shadow-md"
               />
-              <p className="mt-4 text-gray-300">
-                 Community Manager
-              </p>
+              <p className="mt-4 text-gray-300">Community Manager</p>
               <div className="flex justify-center mt-4 space-x-4">
                 <a
                   href="https://x.com/WinnyMuusi"
