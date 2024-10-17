@@ -106,9 +106,7 @@ const Contact = () => {
               <h3 className="text-xl font-bold text-i3m-pink">Contact</h3>
               <p className="mt-2 text-lg text-gray-300">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                Email: ithreem@gmail.com <br />
-                <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
-                Phone: +254712345566
+                Email: ithr3m@gmail.com <br />
               </p>
             </div>
             <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
@@ -147,19 +145,6 @@ const Contact = () => {
                 </motion.button>
               </div>
             </form>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-20 relative z-10">
-        <div className="max-w-5xl mx-auto text-center">
-          <h3 className="text-xl font-bold text-white mb-6">Connect Everywhere</h3>
-          <div className="flex justify-center space-x-4">
-            <FontAwesomeIcon icon={faDiscord} className="text-3xl text-white hover:text-i3m-pink cursor-pointer" />
-            <FontAwesomeIcon icon={faLinkedin} className="text-3xl text-white hover:text-i3m-pink cursor-pointer" />
-            <FontAwesomeIcon icon={faTwitter} className="text-3xl text-white hover:text-i3m-pink cursor-pointer" />
-            <FontAwesomeIcon icon={faYoutube} className="text-3xl text-white hover:text-i3m-pink cursor-pointer" />
-            {/* Add more social media icons as needed */}
           </div>
         </div>
       </div>
