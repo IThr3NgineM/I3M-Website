@@ -1,26 +1,31 @@
 {
-  "canisters": {
-    "I3M-Webiste-backend": {
-      "main": "src/I3M-Webiste-backend/main.mo",
-      "type": "motoko"
+    "canisters": {
+        "I3M-Webiste-backend": {
+            "main": "src/I3M-Webiste-backend/main.mo",
+            "type": "motoko"
+        },
+        "I3M-Webiste-frontend": {
+            "source": [
+                "src/I3M-Webiste-frontend/dist"
+            ],
+            "type": "assets",
+            "workspace": "I3M-Webiste-frontend",
+            "domains": [
+                "https://u6vfg-kyaaa-aaaak-akvva-cai.icp0.io",
+                "https://u6vfg-kyaaa-aaaak-akvva-cai.icp0.io/i3m-engine"
+            ],
+            "routes": {
+                "/": "/index.html",
+                "/i3m-engine": "/i3m-engine/index.html"
+            }
+        }
     },
-    "I3M-Webiste-frontend": {
-      "dependencies": [
-        "I3M-Webiste-backend"
-      ],
-      "source": [
-        "src/I3M-Webiste-frontend/dist"
-      ],
-      "type": "assets",
-      "workspace": "I3M-Webiste-frontend"
-    }
-  },
-  "defaults": {
-    "build": {
-      "args": "",
-      "packtool": ""
-    }
-  },
-  "output_env_file": ".env",
-  "version": 1
+    "defaults": {
+        "build": {
+            "args": "",
+            "packtool": ""
+        }
+    },
+    "output_env_file": ".env",
+    "version": 1
 }

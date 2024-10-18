@@ -1,31 +1,48 @@
-import { useState } from 'react';
-import { I3M_Webiste_backend } from 'declarations/I3M-Webiste-backend';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import Navbar from "./components/Navabar";
+import HomePage from "./pages/Homepage";
+import AboutPage from "./pages/About";
+import Feature from "./pages/Feature";
+import Contact from "./pages/Contact";
+import Roadmap from "./pages/Roadmap";
+import FAQS from "./pages/FAQS";
+import Footer from "./components/Footer";
+import NewWebsiteApp from "./i3m-engine/NewWebsiteApp";
 
-function App() {
-  const [greeting, setGreeting] = useState('');
+const App = () => {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+};
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    I3M_Webiste_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
+const AppContent = () => {
+  const location = useLocation(); 
+
+  const isNewWebsite = location.pathname.startsWith("/i3m-engine");
 
   return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
+    <>
+      {!isNewWebsite && <Navbar />}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/features" element={<Feature />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/roadmap" element={<Roadmap />} />
+        <Route path="/faq" element={<FAQS />} />
+        <Route path="/i3m-engine/*" element={<NewWebsiteApp />} />
+      </Routes>
+      {!isNewWebsite && <Footer />}
+    </>
   );
-}
+};
 
 export default App;
