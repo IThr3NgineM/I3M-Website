@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           </h2>
           <div className="flex items-center gap-4 justify-center">
             <a
-              href="https://x.com/IThr3M"
+              href="https://x.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
               </div>
             </a> */}
             <a
-              href="https://discord.gg/rppWKwGrhf"
+              href="https://discord.gg"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
               </div>
             </a>
             <a
-              href="https://www.linkedin.com/company/i-three-m"
+              href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               </div>
             </a>
             <a
-              href="https://www.youtube.com/@ithr3m"
+              href="https://www.youtube.com"
               target="_blank"
               rel="noopener noreferrer"
             >
